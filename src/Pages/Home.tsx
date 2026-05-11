@@ -256,19 +256,19 @@ const Home: React.FC<HomeProps> = () => {
                 title: "La Nuit Européenne des Musées",
                 date: "Le 23 mai 2026",
                 location: "Le Musée Montagnard des Houches",
-                image: "./images/6.jpg"
+                image: "/assets/hero/6.jpg"
               },
               {
                 title: "Jazz sous les Pommiers ",
                 date: "Du 8 au 16 mai 2026",
                 location: "Coutances",
-                image: "./images/JZ.avif"
+                image: "/assets/hero/JZ.avif"
               },
               {
                 title: "D-Day Festival Normandy ",
                 date: "Du 30 mai au 6 juin 2026",
                 location: "Normandie",
-                image: "./images/15.avif"
+                image: "/assets/hero/15.avif"
               }
             ].map((event, index) => (
               <motion.div 
