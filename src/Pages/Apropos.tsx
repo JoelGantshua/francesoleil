@@ -93,7 +93,7 @@ const Apropos = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <img 
-                src="./images/11.jpg" 
+                src="/assets/hero/11.jpg" 
                 alt="Paysage Français" 
                 className="w-full h-full object-cover"
               />

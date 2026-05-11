@@ -29,7 +29,7 @@ const Home: React.FC<HomeProps> = () => {
     {
       title: "Tourisme & Excursions",
       description: "Découvrez la France avec nos visites guidées et activités touristiques.",
-      image: "./images/4.jpg",
+      image: "/assets/hero/4.jpg",
       link: "/services/tourisme"
     },
     {
@@ -41,19 +41,19 @@ const Home: React.FC<HomeProps> = () => {
     {
       title: "Appartements",
       description: "Découvrez nos appartements et locations de vacances sélectionnés avec soin.",
-      image: "./images/20.webp",
+      image: "/assets/hero/20.webp",
       link: "/services/appartements"
     },
     {
       title: "Villas",
       description: "Profitez de nos villas de luxe pour des vacances inoubliables en France.",
-      image: "./images/2.jpg",
+      image: "/assets/hero/2.jpg",
       link: "/services/villas"
     },
     {
       title: "Hôtels",
       description: "Découvrez nos hôtels sélectionnés pour votre confort et votre détente.",
-      image: "./images/1.jpg",
+      image: "/assets/hero/1.jpg",
       link: "/services/hotels"
     }
   ];

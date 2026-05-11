@@ -7,28 +7,28 @@ const slides = [
     id: 1,
     title: "Découvrez les merveilles de la France ",
     subtitle: "Des paysages à couper le souffle vous attendent",
-    image: "./images/18.avif",
+    image: "/assets/hero/18.avif",
     cta: "Explorer maintenant"
   },
   {
     id: 2,
     title: "Séjours inoubliables",
     subtitle: "Trouvez l'hébergement parfait pour vos vacances",
-    image: "./images/12.jpeg",
+    image: "/assets/hero/12.jpeg",
     cta: "Voir les offres"
   },
   {
     id: 3,
     title: "Aventures en plein air",
     subtitle: "Découvrez des expériences uniques",
-    image: "./images/9.jpg",
+    image: "/assets/hero/09.jpg",
     cta: "Découvrir"
   },
   {
     id: 4,
     title: "Culture et traditions",
     subtitle: "Plongez dans l'authenticité française",
-    image: "./images/5.webp",
+    image: "/assets/hero/5.webp",
     cta: "En savoir plus"
   }
 ];
