@@ -133,7 +133,7 @@ const AnnoncesManagement: React.FC = () => {
                 <div>
                   {item.price ? (
                     <>
-                      <span className="text-lg font-bold text-emerald-600">{item.price} MAD</span>
+                      <span className="text-lg font-bold text-emerald-600">{item.price} €</span>
                       {item.is_negotiable && <span className="text-xs text-gray-500 ml-1">Négociable</span>}
                     </>
                   ) : (

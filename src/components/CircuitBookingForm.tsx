@@ -151,7 +151,7 @@ const CircuitBookingForm: React.FC<CircuitBookingFormProps> = ({ circuit, onClos
         body: JSON.stringify({
           amount: totalPrice * 100, // Convertir en centimes
           bookingId: booking.id,
-          currency: 'mad'
+          currency: 'EUR'
         })
       });
 
@@ -189,7 +189,7 @@ const CircuitBookingForm: React.FC<CircuitBookingFormProps> = ({ circuit, onClos
           .insert({
             booking_id: booking.id,
             amount: totalPrice,
-            currency: 'MAD',
+            currency: 'EUR',
             payment_method: 'stripe',
             stripe_payment_intent_id: paymentIntent.id,
             status: 'succeeded',
@@ -290,7 +290,7 @@ const CircuitBookingForm: React.FC<CircuitBookingFormProps> = ({ circuit, onClos
                 <div className="flex items-center justify-between text-sm text-gray-700">
                   <span>{circuit.duration_days} jours</span>
                   <span className="font-bold text-emerald-600">
-                    {circuit.price_per_person.toLocaleString()} MAD/personne
+                    {circuit.price_per_person.toLocaleString()} €/personne
                   </span>
                 </div>
               </div>
@@ -414,10 +414,10 @@ const CircuitBookingForm: React.FC<CircuitBookingFormProps> = ({ circuit, onClos
               <div className="bg-gray-50 rounded-lg p-4">
                 <div className="flex items-center justify-between text-lg font-bold">
                   <span>Total</span>
-                  <span className="text-emerald-600">{totalPrice.toLocaleString()} MAD</span>
+                  <span className="text-emerald-600">{totalPrice.toLocaleString()} €</span>
                 </div>
                 <p className="text-sm text-gray-600 mt-1">
-                  {formData.numberOfPeople} personne(s) × {circuit.price_per_person.toLocaleString()} MAD
+                  {formData.numberOfPeople} personne(s) × {circuit.price_per_person.toLocaleString()} €
                 </p>
               </div>
 
@@ -450,7 +450,7 @@ const CircuitBookingForm: React.FC<CircuitBookingFormProps> = ({ circuit, onClos
                   </div>
                   <div className="flex justify-between pt-2 border-t text-lg font-bold">
                     <span>Total:</span>
-                    <span className="text-emerald-600">{totalPrice.toLocaleString()} MAD</span>
+                    <span className="text-emerald-600">{totalPrice.toLocaleString()} €</span>
                   </div>
                 </div>
               </div>
@@ -494,7 +494,7 @@ const CircuitBookingForm: React.FC<CircuitBookingFormProps> = ({ circuit, onClos
                   disabled={loading || !stripe}
                   className="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {loading ? 'Traitement...' : `Payer ${totalPrice.toLocaleString()} MAD`}
+                  {loading ? 'Traitement...' : `Payer ${totalPrice.toLocaleString()} €`}
                 </button>
               </div>
 
@@ -528,7 +528,7 @@ const CircuitBookingForm: React.FC<CircuitBookingFormProps> = ({ circuit, onClos
                   <p><strong>Circuit:</strong> {circuit.title}</p>
                   <p><strong>Date:</strong> {new Date(formData.startDate).toLocaleDateString('fr-FR')}</p>
                   <p><strong>Participants:</strong> {formData.numberOfPeople} personne(s)</p>
-                  <p><strong>Total payé:</strong> {totalPrice.toLocaleString()} MAD</p>
+                  <p><strong>Total payé:</strong> {totalPrice.toLocaleString()} €</p>
                 </div>
               </div>
 

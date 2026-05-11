@@ -111,7 +111,7 @@ const Evenements = () => {
               className="text-center"
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Événements au Maroc
+                Événements en France
               </h1>
               <p className="text-xl text-purple-100 max-w-2xl mx-auto">
                 Découvrez les événements culturels et festifs

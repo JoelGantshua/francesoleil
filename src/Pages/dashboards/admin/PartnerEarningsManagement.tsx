@@ -120,7 +120,7 @@ const PartnerEarningsManagement: React.FC = () => {
             <div>
               <p className="text-sm text-gray-600">Total Gains</p>
               <p className="text-2xl font-bold text-gray-900 mt-1">
-                {stats.total.toLocaleString()} MAD
+                {stats.total.toLocaleString()} €
               </p>
             </div>
             <DollarSign className="w-10 h-10 text-emerald-600" />
@@ -132,7 +132,7 @@ const PartnerEarningsManagement: React.FC = () => {
             <div>
               <p className="text-sm text-gray-600">En attente</p>
               <p className="text-2xl font-bold text-yellow-600 mt-1">
-                {stats.pending.toLocaleString()} MAD
+                {stats.pending.toLocaleString()} €
               </p>
             </div>
             <Clock className="w-10 h-10 text-yellow-600" />
@@ -144,7 +144,7 @@ const PartnerEarningsManagement: React.FC = () => {
             <div>
               <p className="text-sm text-gray-600">Payés</p>
               <p className="text-2xl font-bold text-green-600 mt-1">
-                {stats.paid.toLocaleString()} MAD
+                {stats.paid.toLocaleString()} €
               </p>
             </div>
             <CheckCircle className="w-10 h-10 text-green-600" />
@@ -156,7 +156,7 @@ const PartnerEarningsManagement: React.FC = () => {
             <div>
               <p className="text-sm text-gray-600">Commission (10%)</p>
               <p className="text-2xl font-bold text-purple-600 mt-1">
-                {stats.commission.toLocaleString()} MAD
+                {stats.commission.toLocaleString()} €
               </p>
             </div>
             <DollarSign className="w-10 h-10 text-purple-600" />
@@ -255,17 +255,17 @@ const PartnerEarningsManagement: React.FC = () => {
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="text-sm font-medium text-gray-900">
-                        {earning.amount.toLocaleString()} MAD
+                        {earning.amount.toLocaleString()} €
                       </div>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="text-sm text-purple-600 font-medium">
-                        {earning.commission.toLocaleString()} MAD
+                        {earning.commission.toLocaleString()} €
                       </div>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="text-sm text-green-600 font-bold">
-                        {earning.partner_amount.toLocaleString()} MAD
+                        {earning.partner_amount.toLocaleString()} €
                       </div>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap">

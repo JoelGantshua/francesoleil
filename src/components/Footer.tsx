@@ -95,15 +95,15 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             {/* About Section */}
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-primary">Algérie <span className="text-primary font-bold text-2xl color-green-500">Soleil</span></h3>
+              <h3 className="text-2xl font-bold text-primary">France <span className="text-primary font-bold text-2xl color-green-500">Soleil</span></h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Découvrez la beauté intemporelle de Alger avec nous. Nous proposons des expériences uniques et des séjours mémorables dans la ville impériale.
+                Découvrez la beauté intemporelle de Alger avec nous. Nous proposons des expériences uniques et des séjours mémorables.
               </p>
               <div className="flex space-x-4 pt-2">
                 <a href="https://www.facebook.com/share/1D4DDndpRA/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-primary transition-colors" aria-label="Facebook">
                   <FaFacebook size={20} />
                 </a>
-                <a href="https://www.instagram.com/algériesoleil" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-primary transition-colors" aria-label="Instagram">
+                <a href="https://www.instagram.com/FranceSoleil" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-primary transition-colors" aria-label="Instagram">
                   <FaInstagram size={20} />
                 </a>
                 <a href="https://tripadvisor.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-primary transition-colors" aria-label="TripAdvisor">
@@ -134,11 +134,13 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <FaMapMarkerAlt className="mt-1 mr-3 text-primary" />
-                  <span className="text-gray-300">Boulevard Zighoud Youcef, Alger, Algérie</span>
+                  <span className="text-gray-300">1275 route de Châteauneuf, 26320 St Marcel-lès-Valence
+                  </span>
                   </li>
                   <li className="flex items-center">
                   <FaPhone className="mr-3 text-primary" />
-                  <a href="tel:+21266974280" className="text-gray-300 hover:text-primary transition-colors">06 69 74 27 80</a>
+                  <a href="tel:+21266974280" className="text-gray-300 hover:text-primary transition-colors">00 33 6 07 51 74 16
+                  </a>
                 </li>
                 <li className="flex items-center">
                   <FaEnvelope className="mr-3 text-primary" />
@@ -178,7 +180,7 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-center md:text-left">
                 <p className="text-gray-400 text-sm mb-2">
-                  © {currentYear} AlgérieSoleil. Tous droits réservés.
+                  © {currentYear} France Soleil. Tous droits réservés.
                 </p>
                 <p className="text-gray-500 text-sm">
                   Réalisé par{' '}

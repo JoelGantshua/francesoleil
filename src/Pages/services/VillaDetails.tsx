@@ -99,7 +99,7 @@ const VillaDetails = () => {
               </div>
 
               <p className="text-2xl font-semibold text-emerald-600 mb-4">
-                {property.price_per_night || property.price} MAD / nuit
+                {property.price_per_night || property.price} € / nuit
               </p>
               
               <p className="text-gray-700 mb-6">{property.description}</p>

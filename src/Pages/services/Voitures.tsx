@@ -58,7 +58,7 @@ const VoituresPage: React.FC = () => {
       <ServiceHero 
         title="Locations de voitures" 
         subtitle="Trouvez la voiture idéale" 
-        images={['/assets/hero/A.jpg', '/assets/hero/B.jpg']} 
+        images={['/assets/hero/9.jpg', '/assets/hero/11.jpg']} 
         searchPlaceholder="Rechercher une voiture..."
         onSearch={setSearchQuery}
       />

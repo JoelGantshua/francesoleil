@@ -103,7 +103,7 @@ const VoitureDetails = () => {
               )}
 
               <p className="text-2xl font-semibold text-emerald-600 mb-4">
-                {property.price_per_day || property.price} MAD / jour
+                {property.price_per_day || property.price} € / jour
               </p>
               
               <p className="text-gray-700 mb-6">{property.description}</p>

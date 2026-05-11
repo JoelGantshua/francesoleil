@@ -132,7 +132,7 @@ const AppartementsManagement: React.FC = () => {
                 <div className="flex items-center justify-between pt-3 border-t">
                   <div>
                     <span className="text-lg font-bold text-emerald-600">
-                      {item.for_rent ? item.price_per_night : item.price_sale} MAD
+                      {item.for_rent ? item.price_per_night : item.price_sale} €
                     </span>
                     <span className="text-sm text-gray-500">/{item.for_rent ? 'nuit' : 'total'}</span>
                   </div>

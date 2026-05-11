@@ -85,7 +85,7 @@ const PartnerProducts: React.FC = () => {
         });
         
         const { error: deleteError } = await supabase.storage
-          .from('maroc2030')
+          .from('francesoleil')
           .remove(filesToDelete);
           
         if (deleteError) throw deleteError;
@@ -174,7 +174,7 @@ const PartnerProducts: React.FC = () => {
   const formatPrice = (price: number, priceType: string) => {
     return new Intl.NumberFormat('fr-MA', {
       style: 'currency',
-      currency: 'MAD'
+      currency: 'EUR'
     }).format(price) + ` / ${priceType === 'per_night' ? 'nuit' : priceType === 'per_day' ? 'jour' : 'personne'}`;
   };
 

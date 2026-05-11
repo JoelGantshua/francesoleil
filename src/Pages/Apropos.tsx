@@ -12,11 +12,11 @@ const Apropos = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-white">
       {/* Hero Section */}
-      <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: 'url(public/about/mk.webp)' }}>
+      <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: 'url(public/about/mk.jpg)' }}>
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <div className="text-center text-white px-4">
             <h1 className="text-5xl md:text-6xl font-bold mb-4">À Propos de Nous</h1>
-            <p className="text-xl md:text-2xl">Découvrez la magie de l'Algérie à travers nos yeux</p>
+            <p className="text-xl md:text-2xl">Découvrez la magie de la France à travers nos yeux</p>
           </div>
         </div>
       </div>
@@ -28,8 +28,8 @@ const Apropos = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Notre Histoire</h2>
             <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Fondée en 2010, Algérie Soleil est née d'une passion commune pour le partage des trésors cachés et des expériences authentiques que l'Algérie a à offrir. 
-            Notre mission est de créer des voyages qui vont au-delà des sentiers battus, en connectant les voyageurs à la richesse culturelle, aux paysages à couper le souffle et à l'hospitalité légendaire du peuple Algérien.
+              Fondée en 2010, France Soleil est née d'une passion commune pour le partage des trésors cachés et des expériences authentiques que la France a à offrir. 
+            Notre mission est de créer des voyages qui vont au-delà des sentiers battus, en connectant les voyageurs à la richesse culturelle, aux paysages à couper le souffle et à l'hospitalité légendaire du peuple Français.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ const Apropos = () => {
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Notre Mission</h3>
               <p className="text-gray-600 mb-6">
-                Offrir des expériences de voyage authentiques et mémorables qui célèbrent la diversité culturelle et la beauté naturelle de l'Algérie, tout en soutenant les communautés locales et en préservant notre héritage culturel.
+                Offrir des expériences de voyage authentiques et mémorables qui célèbrent la diversité culturelle et la beauté naturelle de la France tout en soutenant les communautés locales et en préservant notre héritage culturel.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start">
@@ -94,7 +94,7 @@ const Apropos = () => {
             >
               <img 
                 src="./images/11.jpg" 
-                alt="Paysage Algérien" 
+                alt="Paysage Français" 
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -102,9 +102,9 @@ const Apropos = () => {
 
           {/* CTA Section */}
           <div className="bg-gradient-to-r from-white to-white/90 rounded-2xl p-8 md:p-12 text-black text-center">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">Prêt à vivre l'aventure Algérienne ?</h3>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">Prêt à vivre l'aventure Française ?</h3>
             <p className="text-black/90 mb-8 max-w-2xl mx-auto">
-              Contactez-nous dès aujourd'hui pour créer l'itinéraire de voyage parfait pour votre prochaine aventure Algérienne.
+              Contactez-nous dès aujourd'hui pour créer l'itinéraire de voyage parfait pour votre prochaine aventure Française.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <button className="bg-white text-black px-8 py-3 rounded-lg font-medium hover:bg-yellow-50 transition-colors">

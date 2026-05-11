@@ -523,7 +523,7 @@ const ClientBookings = () => {
                       
                       <div className="text-right">
                         <p className="text-lg font-semibold text-emerald-600">
-                          {booking.total_price?.toLocaleString('fr-MA', { style: 'currency', currency: 'MAD' }) || 'Prix non disponible'}
+                          {booking.total_price?.toLocaleString('fr-MA', { style: 'currency', currency: 'EUR' }) || 'Prix non disponible'}
                         </p>
                         
                         <div className="mt-3 space-y-2">

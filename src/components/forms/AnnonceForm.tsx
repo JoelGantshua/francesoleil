@@ -132,7 +132,7 @@ const AnnonceForm: React.FC<AnnonceFormProps> = ({ annonce, onClose, onSuccess }
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Prix (MAD)</label>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Prix (€)</label>
               <input type="number" value={formData.price} onChange={(e) => setFormData({ ...formData, price: e.target.value })} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent" placeholder="Optionnel" />
             </div>
 

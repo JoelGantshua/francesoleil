@@ -502,7 +502,7 @@ const PartnerProductBookingForm: React.FC<PartnerProductBookingFormProps> = ({
               <div className="bg-gray-50 rounded-lg p-4 space-y-2">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Prix unitaire:</span>
-                  <span className="font-medium">{product.price} MAD</span>
+                  <span className="font-medium">{product.price} €</span>
                 </div>
                 {isAccommodation && calculateNights() > 0 && (
                   <div className="flex justify-between">
@@ -524,7 +524,7 @@ const PartnerProductBookingForm: React.FC<PartnerProductBookingFormProps> = ({
                 )}
                 <div className="flex justify-between text-lg font-bold border-t pt-2">
                   <span>Total:</span>
-                  <span className="text-emerald-600">{totalPrice} MAD</span>
+                  <span className="text-emerald-600">{totalPrice} €</span>
                 </div>
               </div>
 
@@ -576,7 +576,7 @@ const PartnerProductBookingForm: React.FC<PartnerProductBookingFormProps> = ({
                   ) : (
                     <>
                       <CreditCard className="w-5 h-5" />
-                      Payer {totalPrice} MAD
+                      Payer {totalPrice} €
                     </>
                   )}
                 </button>

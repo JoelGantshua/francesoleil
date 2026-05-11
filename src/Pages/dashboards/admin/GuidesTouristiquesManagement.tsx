@@ -128,7 +128,7 @@ const GuidesTouristiquesManagement: React.FC = () => {
                 </div>
                 <div className="flex items-center justify-between pt-3 border-t">
                   <div>
-                    <span className="text-lg font-bold text-emerald-600">{item.price_per_day} MAD</span>
+                    <span className="text-lg font-bold text-emerald-600">{item.price_per_day} €</span>
                     <span className="text-sm text-gray-500">/jour</span>
                   </div>
                   <div className="flex gap-2">

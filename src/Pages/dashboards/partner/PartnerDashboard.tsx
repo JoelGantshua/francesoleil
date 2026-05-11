@@ -274,7 +274,7 @@ const PartnerDashboard: React.FC = () => {
             const value = typeof tickValue === 'string' ? parseFloat(tickValue) : tickValue;
             return new Intl.NumberFormat('fr-MA', {
               style: 'currency',
-              currency: 'MAD',
+              currency: 'EUR',
               minimumFractionDigits: 2,
             }).format(value);
           },
@@ -300,7 +300,7 @@ const PartnerDashboard: React.FC = () => {
   const formatCurrency = (amount: number) => {
     return new Intl.NumberFormat('fr-MA', {
       style: 'currency',
-      currency: 'MAD',
+      currency: 'EUR',
       minimumFractionDigits: 2,
     }).format(amount);
   };
@@ -422,7 +422,7 @@ const PartnerDashboard: React.FC = () => {
               <div className="ml-5 w-0 flex-1">
                 <dl>
                   <dt className="text-sm font-medium text-gray-500 truncate">
-                    Commission AlgérieSoleil (10%)
+                    Commission FranceSoleil (10%)
                   </dt>
                   <dd className="flex items-baseline">
                     <div className="text-2xl font-semibold text-gray-900">

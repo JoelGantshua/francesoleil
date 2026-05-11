@@ -72,8 +72,8 @@ const Appartements: React.FC = () => {
           title="Appartements"
           subtitle="Trouvez l'appartement idéal pour votre séjour"
           images={[
-            '/assets/hero/A.jpg',
-            '/assets/hero/B.jpg',
+            '/assets/APT/APPART2/ch1.jpg',
+            '/assets/hero/mk.jpg',
             '/assets/hero/C.jpg'
           ]}
         />
@@ -95,7 +95,7 @@ const Appartements: React.FC = () => {
           subtitle="Trouvez l'appartement idéal pour votre séjour"
           images={[
             '/assets/hero/A.jpg',
-            '/assets/hero/B.jpg',
+            '/assets/hero/mk.jpg',
             '/assets/hero/C.jpg'
           ]}
         />
@@ -116,11 +116,11 @@ const Appartements: React.FC = () => {
     <div className="min-h-screen bg-gray-50">
       <ServiceHero
         title="Nos Appartements"
-        subtitle="Découvrez notre sélection d'appartements pour un séjour confortable d'Algérie"
+        subtitle="Découvrez notre sélection d'appartements pour un séjour confortable de la France"
         images={[
-          '/assets/hero/A.jpg',
-          '/assets/hero/B.jpg',
-          '/assets/hero/C.jpg'
+          '/assets/APT/chef/APPART2/ch1.jpg',
+          '/assets/APT/NADOR/apt2/11.jpg',
+          '/assets/APT/TANGER/apt1/2.jpg'
         ]}
         searchPlaceholder="Rechercher un appartement, une ville..."
         onSearch={handleSearch}

@@ -370,7 +370,7 @@ const Payment: React.FC = () => {
                         ) : (
                           <>
                             <CreditCard className="h-5 w-5 mr-2" />
-                            Payer {totalPrice?.toLocaleString()} MAD
+                            Payer {totalPrice?.toLocaleString()} €
                           </>
                         )}
                       </button>
@@ -410,9 +410,9 @@ const Payment: React.FC = () => {
                           Coordonnées bancaires :
                         </p>
                         <p className="text-sm text-white">
-                          Banque : Attijariwafa Bank<br />
-                          IBAN : MA64 0011 0000 0000 0123 4567 89<br />
-                          BIC/SWIFT : BCMAMAMC<br />
+                          Banque : La poste<br />
+                          IBAN : FR64 0011 0000 0000 0123 4567 89<br />
+                          BIC/SWIFT : BICAMAMC<br />
                           Référence : {bookingId}
                         </p>
                       </div>
@@ -455,11 +455,11 @@ const Payment: React.FC = () => {
                     <div className="border-t border-gray-200 pt-3">
                       <div className="flex justify-between mb-2">
                         <span className="text-gray-600">Sous-total</span>
-                        <span className="font-medium">{totalPrice?.toLocaleString()} MAD</span>
+                        <span className="font-medium">{totalPrice?.toLocaleString()} €</span>
                       </div>
                       <div className="flex justify-between mb-2">
                         <span className="text-gray-600">Frais de service</span>
-                        <span className="font-medium">0 MAD</span>
+                        <span className="font-medium">0 €</span>
                       </div>
                     </div>
 
@@ -467,7 +467,7 @@ const Payment: React.FC = () => {
                       <div className="flex justify-between">
                         <span className="font-semibold text-gray-900">Total</span>
                         <span className="font-bold text-primary text-xl">
-                          {totalPrice?.toLocaleString()} MAD
+                          {totalPrice?.toLocaleString()} €
                         </span>
                       </div>
                     </div>

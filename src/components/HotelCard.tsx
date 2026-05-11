@@ -105,7 +105,7 @@ const HotelCard: React.FC<HotelCardProps> = ({
 
         {/* Indicateur de prix */}
         <div className="absolute bottom-2 left-2 bg-white/90 px-3 py-1 rounded-full text-sm font-semibold text-teal-700">
-          {price?.toLocaleString()} MAD
+          {price?.toLocaleString()} €
           <span className="text-xs font-normal">/nuit</span>
         </div>
 

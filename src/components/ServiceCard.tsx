@@ -224,7 +224,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   const servicePath = type || 'hotels';
   const serviceIcon = getServiceIcon(type || 'hotels');
   const displayPriceValue = price_per_night || price;
-  const displayPrice = displayPriceValue ? `${displayPriceValue} MAD` : 'Sur demande';
+  const displayPrice = displayPriceValue ? `${displayPriceValue} €` : 'Sur demande';
   const locationText = [city, region].filter(Boolean).join(', ');
 
   const handleImageClick = (e: React.MouseEvent) => {

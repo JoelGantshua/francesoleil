@@ -195,7 +195,7 @@ const AdminDashboard: React.FC = () => {
   const formatCurrency = (amount: number) => {
     return new Intl.NumberFormat('fr-MA', {
       style: 'currency',
-      currency: 'MAD',
+      currency: 'EUR',
       minimumFractionDigits: 0
     }).format(amount);
   };
@@ -925,7 +925,7 @@ const AnnoncesList: React.FC = () => {
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                     {annonce.price ? (
                       <span className="font-medium">
-                        {new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'MAD' }).format(annonce.price)}
+                        {new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' }).format(annonce.price)}
                       </span>
                     ) : (
                       <span className="text-gray-500">Non spécifié</span>

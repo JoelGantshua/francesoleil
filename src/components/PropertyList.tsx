@@ -67,7 +67,7 @@ const PropertyList: React.FC<PropertyListProps> = ({
     
     return new Intl.NumberFormat('fr-MA', { 
       style: 'currency', 
-      currency: 'MAD' 
+      currency: 'EUR' 
     }).format(price);
   };
 

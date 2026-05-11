@@ -271,7 +271,7 @@ const HotelsManagement: React.FC = () => {
                       <div>
                         <div className="text-sm text-gray-500">À partir de</div>
                         <span className="text-lg font-bold text-emerald-600">
-                          {hotel.price_per_night?.toLocaleString('fr-MA')} DH
+                          {hotel.price_per_night?.toLocaleString('fr-MA')} €
                           <span className="text-sm font-normal text-gray-500">/nuit</span>
                         </span>
                       </div>

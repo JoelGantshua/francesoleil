@@ -24,35 +24,35 @@ interface Event {
 const staticEvents: Event[] = [
   {
     id: '1',
-    title: "le Salon SIAHA à Oran",
-    date: "15-17 Mai 2026",
-    location: "Centre des conventions d'Oran",
-    time: "Toute la journée",
-    description: "Créer des partenariats, promouvoir les services touristiques, et présenter des solutions pour l'hôtellerie.",
-    image: "./assets/events/T0.jpeg",
+    title: "Hilma af Klint",
+    date: "dès le 6 mai 2026.",
+    location: " Paris",
+    time: "06:00 - 18:00",
+    description: " Une exposition dédiée à la pionnière de l'abstraction au Grand Palais",
+    image: "./assets/events/1.jpg",
     category: "Festival",
     price: 250,
     available_seats: 200
   },
   {
     id: '2',
-    title: "Marathon des Sables",
-    date: "12-22 Avril 2026",
-    location: "Désert du Sahara, Algérie",
+    title: "Calder, Rêver en équilibre",
+    date: "du 15 avril au 16 août 2026",
+    location: " Paris",
     time: "06:00 - 18:00",
-    description: "Participez à l'une des courses à pied les plus difficiles au monde à travers les paysages époustouflants du désert Algérien.",
-    image: "./assets/events/1.jpg",
+    description: " Une grande rétrospective à la Fondation Louis Vuitton de Paris",
+    image: "./assets/events/7.jpg",
     category: "Sport",
     price: 3500,
     available_seats: 500
   },
   {
     id: '3',
-    title: "Festival des Arts Populaires",
-    date: "22-30 Juin 2026",
-    location: "Alger",
+    title: "Hommage à Sebastião Salgado",
+    date: " jusqu'au 30 mai 2026",
+    location: "Paris",
     time: "18:00 - Minuit",
-    description: "Découvrez la richesse du patrimoine culturel Algérienà travers des spectacles de musique, de danse et d'art traditionnels.",
+    description: "Une exposition gratuite à l'Hôtel de Ville de Paris.",
     image: "./assets/events/2.jpg",
     category: "Culture",
     price: 150,
@@ -60,36 +60,36 @@ const staticEvents: Event[] = [
   },
   {
     id: '4',
-    title: "Festival international du cinéma",
-    date: "20-23 Juin 2026",
-    location: " Alger",
-    time: "20:00 - 02:00",
-    description: "Le plus grand festival de musique Gnaoua au monde, avec des artistes internationaux et locaux.",
-    image: "./assets/events/mrkc.jpg",
-    category: "Musique",
+    title: "Roland-Garros",
+    date: "le 18 mai et se poursuit jusqu'au 7 juin 2026",
+    location: "Paris",
+    time: "",
+    description: " Le tournoi de tennis du Grand Chelem débute à Paris",
+    image: "./assets/events/mkr.webp",
+    category: "Sport",
     price: 200,
     available_seats: 1000
   },
   {
     id: '5',
-    title: "Festival International du Film",
-    date: "1-9 Décembre 2026",
-    location: "Alger",
+    title: "Jazz sous les Pommiers",
+    date: "du 15 avril au 16 août 2026",
+    location: "Paris",
     time: "18:00 - 23:00",
-    description: "Découvrez les meilleurs films du monde entier dans la ville rouge.",
-    image: "./assets/events/2.jpg",
-    category: "Cinéma",
+    description: ".",
+    image: "./assets/events/19.avif",
+    category: "Musique",
     price: 300,
     available_seats: 500
   },
   {
     id: '6',
-    title: "Moussem de Tan-Tan",
-    date: "15-20 Mai 2026",
-    location: "Tan-Tan, Algérie",
+    title: "La Nuit Européenne des Musées",
+    date: "Le 23 mai 2026",
+    location: "Paris",
     time: "Toute la journée",
-    description: "Patrimoine culturel immatériel de l'UNESCO, célébrant les traditions nomades.",
-    image: "./assets/events/T0.jpeg",
+    description: "Plus de 1 300 musées en France ouvrent gratuitement leurs portes en nocturne.",
+    image: "./assets/events/18.jpg",
     category: "Culture",
     price: 180,
     available_seats: 250
@@ -217,11 +217,11 @@ const Evenements = () => {
   return (
     <div className="min-h-screen bg-white bg-gradient-to-b from-white to-white">
       {/* Hero Section */}
-      <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: 'url(./assets/events/mrkc.jpg)' }}>
+      <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: 'url(./assets/events/ev.png)' }}>
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <div className="text-center text-white px-4">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4">Événements en Algérie</h1>
-            <p className="text-xl md:text-2xl">Découvrez les événements les plus captivants à travers le royaume</p>
+            <h1 className="text-5xl md:text-6xl font-bold mb-4">Événements en France</h1>
+            <p className="text-xl md:text-2xl">Découvrez les événements les plus captivants à travers la France</p>
           </div>
         </div>
       </div>
@@ -232,7 +232,7 @@ const Evenements = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Événements à Venir</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Vivez des expériences uniques à travers les festivals, concerts et événements culturels de l'Algérie
+            Vivez des expériences uniques à travers les festivals, concerts et événements culturels de la France
           </p>
         </div>
 
@@ -286,7 +286,7 @@ const Evenements = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">Ne manquez aucun événement</h3>
             <p className="text-black/90 mb-8 max-w-2xl mx-auto">
-              Inscrivez-vous à notre newsletter pour recevoir les dernières actualités sur les événements à venir en Algérie.
+              Inscrivez-vous à notre newsletter pour recevoir les dernières actualités sur les événements à venir en France.
             </p>
             <form onSubmit={handleNewsletterSubmit} className="flex flex-col md:flex-row gap-5 max-w-xl mx-auto">
               <input 

@@ -153,7 +153,7 @@ const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
 
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700">Prix par nuit (MAD)</label>
+          <label className="block text-sm font-medium text-gray-700">Prix par nuit (€)</label>
           <input
             type="number"
             name="price_per_night"

@@ -69,14 +69,14 @@ const Contact = () => {
     {
       icon: <FiPhone className="h-6 w-6 text-primary" />,
       title: 'Téléphone',
-      description: settings?.phone_primary || '06 69 74 27 80',
-      link: `tel:${settings?.phone_primary?.replace(/\s/g, '') || '0669742780'}`
+      description: settings?.phone_primary || '00 33 6 07 51 74 16',
+      link: `tel:${settings?.phone_primary?.replace(/\s/g, '') || '0033607517416'}`
     },
     {
       icon: <FiMapPin className="h-6 w-6 text-primary" />,
       title: 'Adresse',
-      description: `${settings?.address || 'Boulevard Zighoud Youcef '}, ${settings?.postal_code || '40000'} ${settings?.city || 'Alger'}, ${settings?.country || 'Algérie'}`,
-      link: `https://maps.google.com/?q=${settings?.city || 'Alger'},${settings?.country || 'Algérie'}`
+      description: `${settings?.address || '1275 route de Châteauneuf '}, ${settings?.postal_code || '26320 '} ${settings?.city || 'St Marcel-lès-Valence'}, ${settings?.country || 'France'}`,
+      link: `https://maps.google.com/?q=${settings?.city || 'St Marcel-lès-Valence'},${settings?.country || 'France'}`
     },
     {
       icon: <FiClock className="h-6 w-6 text-primary" />,
@@ -138,7 +138,7 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">{ 'Algériesoleil'} - Restons en contact</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">{ 'Francesoleil'} - Restons en contact</h2>
               <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Que vous ayez des questions sur nos services ou que vous souhaitiez en savoir plus sur nos offres, n'hésitez pas à nous contacter.
@@ -275,7 +275,7 @@ const Contact = () => {
                 <div className="bg-white p-1 rounded-xl shadow-lg overflow-hidden">
                   <div className="aspect-w-16 aspect-h-9 w-full h-64 md:h-80">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204628.438878535!2d2.974518310142944!3d36.73890482180594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb26977ea659f%3A0x4231102d38a36f49!2zQWxnZXIsIEFsZ8Opcmll!5e0!3m2!1sfr!2sma!4v1769701729178!5m2!1sfr!2sma"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.302744221843!2d4.949461876247919!3d44.983523371070135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f55120f4ab16a1%3A0xdce9228e8c0b02f9!2s1275%20Rte%20de%20Chateauneuf%2C%2026320%20Saint-Marcel-l%C3%A8s-Valence%2C%20France!5e1!3m2!1sfr!2sma!4v1778357076027!5m2!1sfr!2sma" 
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
@@ -299,23 +299,23 @@ const Contact = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Questions fréquentes</h2>
             <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-xl text-gray-600">
-              Trouvez des réponses aux questions les plus courantes sur nos services et le tourisme en Algérie.
+              Trouvez des réponses aux questions les plus courantes sur nos services et le tourisme en France.
             </p>
           </div>
 
           <div className="max-w-3xl mx-auto space-y-4">
             {[
               {
-                question: "Quelle est la meilleure période pour visiter l'Algérie ?",
-                answer: "Le printemps (mars à mai) et l'automne (septembre à novembre) sont les meilleures périodes pour visiter l'Algérie, avec des températures agréables et des paysages magnifiques."
+                question: "Quelle est la meilleure période pour visiter la France ?",
+                answer: "Le printemps (mars à mai) et l'automne (septembre à novembre) sont les meilleures périodes pour visiter la France, avec des températures agréables et des paysages magnifiques."
               },
               {
-                question: "Avez-vous des guides francophones ?",
-                answer: "Oui, tous nos guides sont parfaitement francophones et expérimentés. Certains parlent également anglais, espagnol et arabe."
+                question: "Avez-vous des guides anglophones ?",
+                answer: "Oui, tous nos guides sont parfaitement anglophones et expérimentés. Certains parlent également espagnol et arabe."
               },
               {
                 question: "Quels sont les moyens de paiement acceptés ?",
-                answer: "Nous acceptons les cartes de crédit (Visa, Mastercard), les virements bancaires et les paiements en espèces en Dinar Algérien (DZD)."
+                answer: "Nous acceptons les cartes de crédit (Visa, Mastercard), les virements bancaires et les paiements en espèces en Franc (EUR)."
               },
               {
                 question: "Proposez-vous des itinéraires personnalisés ?",

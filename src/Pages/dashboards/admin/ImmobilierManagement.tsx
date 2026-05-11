@@ -124,7 +124,7 @@ const ImmobilierManagement: React.FC = () => {
                 </div>
                 <div className="flex items-center justify-between pt-3 border-t">
                   <div>
-                    <span className="text-lg font-bold text-emerald-600">{item.price} MAD</span>
+                    <span className="text-lg font-bold text-emerald-600">{item.price} €</span>
                     <span className="text-sm text-gray-500 ml-1">{item.transaction_type}</span>
                   </div>
                   <div className="flex gap-2">

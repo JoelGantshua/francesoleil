@@ -75,7 +75,7 @@ const PaymentSuccess: React.FC = () => {
                     <div className="flex justify-between">
                       <span className="font-semibold text-gray-900">Montant payé</span>
                       <span className="font-bold text-green-600 text-xl">
-                        {totalPrice?.toLocaleString()} MAD
+                        {totalPrice?.toLocaleString()} €
                       </span>
                     </div>
                   </div>

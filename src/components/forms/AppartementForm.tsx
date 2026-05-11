@@ -167,7 +167,7 @@ const AppartementForm: React.FC<AppartementFormProps> = ({ appartement, onClose,
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Prix par nuit (MAD) *
+                Prix par nuit (€) *
               </label>
               <input
                 type="number"

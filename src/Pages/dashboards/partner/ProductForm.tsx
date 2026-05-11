@@ -86,7 +86,7 @@ const ProductForm: React.FC<ProductFormProps> = ({ onClose = () => {}, onCreate,
       setFeatures([createEmptyFeature()]);
       setImageInput('');
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [editingProduct]);
 
   const buildProductPayload = useMemo(() => {

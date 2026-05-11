@@ -53,7 +53,7 @@ const CallModal: React.FC<CallModalProps> = ({ isOpen, onClose }) => {
             <div className="flex-1">
               <p className="text-sm text-gray-600 font-medium">Téléphone</p>
               <p className="text-lg font-bold text-gray-900 group-hover:text-primary transition-colors">
-                +212 669-742780
+                +33 669-742780
               </p>
             </div>
           </a>
@@ -82,8 +82,8 @@ const CallModal: React.FC<CallModalProps> = ({ isOpen, onClose }) => {
             <div className="flex-1">
               <p className="text-sm text-gray-600 font-medium mb-1">Adresse</p>
               <p className="text-sm text-gray-900">
-                Boulevard Zighoud Youcef<br />
-                Alger, Algérie
+              1275 route de Châteauneuf<br />
+              26320 St Marcel-lès-Valence
               </p>
             </div>
           </div>

@@ -121,7 +121,7 @@ const ApartmentCard: React.FC<ApartmentCardProps> = ({
         
         <div className="mt-4 flex justify-between items-center">
           <span className="text-lg font-bold text-emerald-600">
-            {price.toLocaleString()} MAD / nuit
+            {price.toLocaleString()} € / nuit
           </span>
           <button
             onClick={(e) => {

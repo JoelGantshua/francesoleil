@@ -310,7 +310,7 @@ const PartnerAnnonces = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Prix (MAD)
+                  Prix (€)
                 </label>
                 <input
                   type="number"
@@ -469,7 +469,7 @@ const PartnerAnnonces = () => {
                     {annonce.price > 0 && (
                       <div className="flex items-center gap-2 text-sm text-gray-600">
                         <DollarSign className="w-4 h-4" />
-                        <span className="font-bold text-emerald-600">{annonce.price} MAD</span>
+                        <span className="font-bold text-emerald-600">{annonce.price} €</span>
                       </div>
                     )}
                     {annonce.city && (

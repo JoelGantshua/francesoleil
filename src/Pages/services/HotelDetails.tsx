@@ -100,7 +100,7 @@ const HotelDetails = () => {
               )}
 
               <p className="text-2xl font-semibold text-emerald-600 mb-4">
-                À partir de {property.price_per_night || property.price || 0} MAD / nuit
+                À partir de {property.price_per_night || property.price || 0} € / nuit
               </p>
               
               <p className="text-gray-700 mb-6">{property.description}</p>

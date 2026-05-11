@@ -24,7 +24,7 @@ const BookingsList: React.FC = () => {
         <div key={b.id} className="p-3 border-b">
           <div>{b.product_title} — {new Date(b.start_date).toLocaleDateString()} → {new Date(b.end_date).toLocaleDateString()}</div>
           <div>Client: {b.client_name} ({b.client_email})</div>
-          <div>Montant: {b.amount} {b.currency || 'MAD'}</div>
+          <div>Montant: {b.amount} {b.currency || '€'}</div>
           <div>Statut: {b.booking_status} / {b.payment_status}</div>
         </div>
       ))}

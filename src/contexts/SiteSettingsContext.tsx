@@ -146,12 +146,12 @@ export const useSiteSettings = () => {
 const getDefaultSettings = (): SiteSettings => ({
   // Contact
   email: 'imam@orange.fr',
-  phone_primary: '+212 669-742780',
+  phone_primary: '00 33 6 07 51 74 16',
   phone_secondary: '',
-  address: '123 Avenue Mohammed V',
-  city: 'Marrakech',
-  postal_code: '40000',
-  country: 'Maroc',
+  address: '1275 route de Châteauneuf, 26320 St Marcel-lès-Valence',
+  city: 'St Marcel-lès-Valence',
+  postal_code: '26320',
+  country: 'France',
   
   // Réseaux sociaux
   facebook_url: 'https://facebook.com',
@@ -173,22 +173,22 @@ const getDefaultSettings = (): SiteSettings => ({
   },
   
   // Général
-  site_name: 'AlgérieSoleil',
-  site_slogan: 'Votre destination de rêve au Maroc',
-  site_description_short: 'Découvrez l\'Algérie',
-  site_description_long: 'AlgérieSoleil est votre partenaire de confiance pour découvrir les merveilles du Maroc. Nous proposons des services de qualité pour rendre votre séjour inoubliable.',
-  site_keywords: 'maroc, tourisme, voyage, hôtel, location, circuits',
+  site_name: 'FranceSoleil',
+  site_slogan: 'Votre destination de rêve en France',
+  site_description_short: 'Découvrez la France',
+  site_description_long: 'FranceSoleil est votre partenaire de confiance pour découvrir les merveilles de la France. Nous proposons des services de qualité pour rendre votre séjour inoubliable.',
+  site_keywords: 'france, tourisme, voyage, hôtel, location, circuits',
   logo_url: '',
   favicon_url: '',
   
   // Textes
-  home_hero_title: 'Découvrez le Maroc',
+  home_hero_title: 'Découvrez la France',
   home_hero_subtitle: 'Votre voyage commence ici',
   about_title: 'À propos de nous',
-  about_text: 'Nous sommes une équipe passionnée dédiée à vous faire découvrir les merveilles du Maroc.',
+  about_text: 'Nous sommes une équipe passionnée dédiée à vous faire découvrir les merveilles de la France.',
   why_choose_us_title: 'Pourquoi nous choisir ?',
   why_choose_us_text: 'Service de qualité, prix compétitifs, expérience locale.',
-  footer_text: '© 2024 AlgérieSoleil. Tous droits réservés.',
+  footer_text: '© 2024 FranceSoleil. Tous droits réservés.',
   legal_mentions: '',
   privacy_policy: '',
   terms_conditions: '',
@@ -199,5 +199,5 @@ const getDefaultSettings = (): SiteSettings => ({
   maintenance_mode: false,
   maintenance_message: 'Site en maintenance. Nous revenons bientôt !',
   default_language: 'fr',
-  default_currency: 'MAD'
+  default_currency: 'EUR'
 });

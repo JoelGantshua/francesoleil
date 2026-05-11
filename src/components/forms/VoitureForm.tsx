@@ -148,7 +148,7 @@ const VoitureForm: React.FC<VoitureFormProps> = ({ voiture, onClose, onSuccess }
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Prix par jour (MAD) *</label>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Prix par jour (€) *</label>
               <input type="number" required value={formData.price_per_day} onChange={(e) => setFormData({ ...formData, price_per_day: e.target.value })} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent" />
             </div>
 

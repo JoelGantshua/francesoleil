@@ -26,7 +26,7 @@ const serviceCategories: ServiceCategory[] = [
     icon: <FaCar className="text-4xl mb-4 text-emerald-500" />,
     gradient: 'from-emerald-500 to-cyan-400',
     hover: 'hover:from-emerald-600 hover:to-cyan-500',
-    description: 'Explorez l\'Algérie à votre rythme avec nos véhicules de location haut de gamme.',
+    description: 'Explorez la France à votre rythme avec nos véhicules de location haut de gamme.',
     images: ['/VOITURE/1.jpg', '/VOITURE/2.jpg', '/VOITURE/3.jpg'],
     price: 200,
     duration: 'par jour'
@@ -70,7 +70,7 @@ const serviceCategories: ServiceCategory[] = [
     icon: <FaRoute className="text-4xl mb-4 text-purple-500" />,
     gradient: 'from-purple-500 to-indigo-400',
     hover: 'hover:from-purple-600 hover:to-indigo-500',
-    description: 'Découvrez les trésors cachés de l\'Algérie avec nos guides experts.',
+    description: 'Découvrez les trésors cachés de la France avec nos guides experts.',
     images: ['/voyages/vyg/es/1.jpg','/voyages/vyg/casa/1.webp','/voyages/vyg/Villebeu/4.webp'],
     price: 50,
     duration: 'par personne'
@@ -112,7 +112,7 @@ const Services = () => {
           <div 
             className="w-full h-full bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `url('/assets/hero/marrakech.jpg')`,
+              backgroundImage: `url('/assets/hero/mk.jpg')`,
               backgroundAttachment: 'fixed'
             }}
           >
@@ -135,11 +135,11 @@ const Services = () => {
               transition={{ delay: 0.2, duration: 0.5 }}
             >
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                Découvrez l'Algérie sous son plus beau jour
+                Découvrez la France sous son plus beau jour
               </h1>
               <div className="w-32 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto my-8 rounded-full"></div>
               <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-                Des expériences uniques, des paysages à couper le souffle et un accueil chaleureux vous attendent en Algérie   </p>
+                Des expériences uniques, des paysages à couper le souffle et un accueil chaleureux vous attendent en France   </p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -148,8 +148,20 @@ const Services = () => {
               >
                 <Link 
                   to="/contact"
-                  className="inline-flex items-center bg-green-500 text-white px-6 py-3 rounded-full font-medium hover:bg-green-600 transition-all duration-300 transform hover:scale-105"
-                >
+                  className="
+                  ml-4
+                  bg-gradient-to-r from-blue-700 via-gray-100 to-red-600
+                  text-black
+                  [text-shadow:0_0_1px_rgba(255,255,255,0.3)]
+                  px-5 py-2.5
+                  rounded-lg
+                  text-sm
+                  font-bold
+                  hover:brightness-110
+                  transition-all duration-300
+                  shadow-md hover:shadow-lg
+                  flex items-center gap-2
+                ">
                   Réserver Maintenant
                 </Link>
                 <Link 
@@ -242,9 +254,9 @@ const Services = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-black/30 to-indigo-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">Prêt à vivre l'aventure à Meknès ?</h2>
+          <h2 className="text-4xl font-bold mb-6">Prêt à vivre l'aventure ?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Notre équipe est à votre disposition pour créer le voyage de vos rêves à Meknès
+            Notre équipe est à votre disposition pour créer le voyage de vos rêves
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link 

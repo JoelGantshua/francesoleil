@@ -190,7 +190,7 @@ const CircuitDetails = () => {
             <div className="bg-white rounded-xl shadow-lg p-6 sticky top-24">
               <div className="text-center mb-6">
                 <div className="text-4xl font-bold text-emerald-600 mb-2">
-                  {circuit.price_per_person.toLocaleString()} MAD
+                  {circuit.price_per_person.toLocaleString()} €
                 </div>
                 <p className="text-gray-600">par personne</p>
               </div>

@@ -122,7 +122,7 @@ const Activites = () => {
                 Activités Touristiques
               </h1>
               <p className="text-xl text-green-100 max-w-2xl mx-auto">
-                Vivez des expériences inoubliables au Maroc
+                Vivez des expériences inoubliables en France
               </p>
             </motion.div>
           </div>
@@ -241,7 +241,7 @@ const Activites = () => {
                     <div className="flex items-center justify-between pt-4 border-t">
                       <div>
                         <span className="text-2xl font-bold text-green-600">
-                          {activite.price} MAD
+                          {activite.price} €
                         </span>
                         <span className="text-gray-500 text-sm"> / pers</span>
                       </div>

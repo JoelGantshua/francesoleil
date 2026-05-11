@@ -196,7 +196,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose, ser
                   />
                   <label htmlFor="breakfast" className="ml-2 block text-sm text-gray-700 flex items-center">
                     <Utensils className="h-4 w-4 mr-1" />
-                    Petit-déjeuner inclus (+150 MAD/pers/nuit)
+                    Petit-déjeuner inclus (+15 €/pers/nuit)
                   </label>
                 </div>
               </div>
@@ -321,9 +321,9 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose, ser
               <div className="space-y-2">
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-600">
-                    {service.price} MAD x {calculateDays()} nuit{calculateDays() > 1 ? 's' : ''} x {formData.guests} {formData.guests > 1 ? 'personnes' : 'personne'}
+                    {service.price} € x {calculateDays()} nuit{calculateDays() > 1 ? 's' : ''} x {formData.guests} {formData.guests > 1 ? 'personnes' : 'personne'}
                   </span>
-                  <span>{(service.price * calculateDays() * formData.guests).toFixed(2)} MAD</span>
+                  <span>{(service.price * calculateDays() * formData.guests).toFixed(2)} €</span>
                 </div>
                 
                 {formData.breakfastIncluded && (
@@ -331,7 +331,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose, ser
                     <span className="text-gray-600">
                       Petit-déjeuner ({formData.guests} pers. x {calculateDays()} nuit{calculateDays() > 1 ? 's' : ''})
                     </span>
-                    <span>+{(150 * formData.guests * calculateDays()).toFixed(2)} MAD</span>
+                    <span>+{(15 * formData.guests * calculateDays()).toFixed(2)} €</span>
                   </div>
                 )}
                 
@@ -339,7 +339,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose, ser
                 
                 <div className="flex justify-between font-semibold">
                   <span>Total</span>
-                  <span className="text-emerald-600">{calculateTotalPrice().toFixed(2)} MAD</span>
+                  <span className="text-emerald-600">{calculateTotalPrice().toFixed(2)} €</span>
                 </div>
               </div>
               

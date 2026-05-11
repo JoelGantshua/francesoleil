@@ -305,7 +305,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, role }) => 
         ></div>
         <div className="fixed inset-y-0 left-0 flex flex-col w-64 bg-gradient-to-b from-emerald-50 to-green-50">
           <div className="flex items-center justify-between h-16 px-4 border-b">
-            <span className="text-xl font-bold text-emerald-600">AlgérieSoleil</span>
+            <span className="text-xl font-bold text-emerald-600">Francesoleil</span>
             <button
               onClick={() => setSidebarOpen(false)}
               className="text-emerald-600 hover:text-emerald-800"
@@ -341,7 +341,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, role }) => 
       <div className="hidden lg:fixed lg:inset-y-0 lg:flex lg:w-64 lg:flex-col">
         <div className="flex flex-col flex-1 min-h-0 bg-gradient-to-b from-emerald-50 to-green-50 border-r">
           <div className="flex items-center h-16 px-4 border-b">
-            <span className="text-xl font-bold text-emerald-600">AlgérieSoleil</span>
+            <span className="text-xl font-bold text-emerald-600">Francesoleil</span>
           </div>
           <nav className="flex-1 px-4 py-4 space-y-1 overflow-y-auto">
             {menuItems.map((item) => {

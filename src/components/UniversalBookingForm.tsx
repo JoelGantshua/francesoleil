@@ -270,7 +270,7 @@ const UniversalBookingForm: React.FC<UniversalBookingFormProps> = ({ serviceType
         body: JSON.stringify({
           amount: totalPrice * 100,
           bookingId: booking.id,
-          currency: 'mad'
+          currency: 'EUR'
         })
       });
 
@@ -308,7 +308,7 @@ const UniversalBookingForm: React.FC<UniversalBookingFormProps> = ({ serviceType
           .insert({
             booking_id: booking.id,
             amount: totalPrice,
-            currency: 'MAD',
+            currency: 'EUR',
             payment_method: 'stripe',
             stripe_payment_intent_id: paymentIntent.id,
             status: 'succeeded',
@@ -440,7 +440,7 @@ const UniversalBookingForm: React.FC<UniversalBookingFormProps> = ({ serviceType
             {calculateNights() > 0 && (
               <div className="bg-emerald-50 p-2 rounded-lg">
                 <p className="text-xs text-emerald-800">
-                  <strong>{calculateNights()} nuit{calculateNights() > 1 ? 's' : ''}</strong> × {service.price_per_night} MAD
+                  <strong>{calculateNights()} nuit{calculateNights() > 1 ? 's' : ''}</strong> × {service.price_per_night} €
                 </p>
               </div>
             )}
@@ -514,7 +514,7 @@ const UniversalBookingForm: React.FC<UniversalBookingFormProps> = ({ serviceType
             {calculateDays() > 0 && (
               <div className="bg-emerald-50 p-2 rounded-lg">
                 <p className="text-xs text-emerald-800">
-                  <strong>{calculateDays()} jour{calculateDays() > 1 ? 's' : ''}</strong> × {service.price_per_day} MAD
+                  <strong>{calculateDays()} jour{calculateDays() > 1 ? 's' : ''}</strong> × {service.price_per_day} €
                 </p>
               </div>
             )}
@@ -735,7 +735,7 @@ const UniversalBookingForm: React.FC<UniversalBookingFormProps> = ({ serviceType
           <div className="bg-gray-50 p-2 rounded-lg">
             <div className="flex items-center justify-between text-base font-bold">
               <span>Prix total</span>
-              <span className="text-emerald-600">{totalPrice.toLocaleString()} MAD</span>
+              <span className="text-emerald-600">{totalPrice.toLocaleString()} €</span>
             </div>
           </div>
 
@@ -776,7 +776,7 @@ const UniversalBookingForm: React.FC<UniversalBookingFormProps> = ({ serviceType
                   disabled={loading || !stripe}
                   className="flex-1 px-4 py-2 text-sm bg-green-600 text-white rounded-lg hover:bg-green-700 font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {loading ? 'Traitement...' : `Payer ${totalPrice.toLocaleString()} MAD`}
+                  {loading ? 'Traitement...' : `Payer ${totalPrice.toLocaleString()} €`}
                 </button>
               </>
             )}

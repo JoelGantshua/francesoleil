@@ -295,7 +295,7 @@ const PartnerEvents = () => {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-gray-600">Revenus</p>
-              <p className="text-2xl font-bold text-green-600">{stats.totalRevenue} MAD</p>
+              <p className="text-2xl font-bold text-green-600">{stats.totalRevenue} €</p>
             </div>
             <DollarSign className="w-8 h-8 text-green-600" />
           </div>
@@ -351,7 +351,7 @@ const PartnerEvents = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Prix par personne (MAD)
+                  Prix par personne (€)
                 </label>
                 <input
                   type="number"
@@ -487,7 +487,7 @@ const PartnerEvents = () => {
                   {event.price > 0 && (
                     <div className="flex items-center gap-2 text-sm text-gray-600">
                       <DollarSign className="w-4 h-4" />
-                      <span className="font-bold text-emerald-600">{event.price} MAD</span>
+                      <span className="font-bold text-emerald-600">{event.price} €</span>
                     </div>
                   )}
                   {event.max_participants > 0 && (

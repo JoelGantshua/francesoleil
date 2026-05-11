@@ -183,7 +183,7 @@ const CircuitDetailsModal: React.FC<CircuitDetailsModalProps> = ({
                   </div>
                 )}
                 <div className="text-2xl font-bold text-emerald-600">
-                  {circuit.price?.toLocaleString()} MAD
+                  {circuit.price?.toLocaleString()} €
                   {circuit.price && <span className="text-sm text-gray-500 font-normal">/personne</span>}
                 </div>
               </div>

@@ -26,10 +26,10 @@ const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose, type }) => {
               <section>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Éditeur du site</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  <strong>AlgérieSoleil</strong><br />
-                  Boulevard Zighoud Youcef<br />
-                  Alger, Algérie<br />
-                  Téléphone : +213 669-742780<br />
+                  <strong>FranceSoleil</strong><br />
+                  1275 route de Châteauneuf, 26320 St Marcel-lès-Valence<br />
+                  France<br />
+                  Téléphone : 00 33 6 07 51 74 16<br />
                   Email : imam@orange.fr
                 </p>
               </section>
@@ -37,7 +37,7 @@ const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose, type }) => {
               <section>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Directeur de publication</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Le directeur de la publication du site est le représentant légal de AlgérieSoleil.
+                  Le directeur de la publication du site est le représentant légal de FranceSoleil.
                 </p>
               </section>
 
@@ -55,14 +55,14 @@ const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose, type }) => {
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Propriété intellectuelle</h3>
                 <p className="text-gray-700 leading-relaxed">
                   L'ensemble du contenu de ce site (textes, images, vidéos, etc.) est protégé par le droit d'auteur. 
-                  Toute reproduction, même partielle, est interdite sans autorisation préalable de AlgérieSoleil.
+                  Toute reproduction, même partielle, est interdite sans autorisation préalable de FranceSoleil.
                 </p>
               </section>
 
               <section>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Données personnelles</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Conformément à la loi algérienne relative à la protection des données personnelles, 
+                  Conformément à la loi française relative à la protection des données personnelles, 
                   vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant. 
                   Pour exercer ce droit, contactez-nous à : imam@orange.fr
                 </p>
@@ -103,7 +103,7 @@ const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose, type }) => {
               <section>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Collecte des données</h3>
                 <p className="text-gray-700 leading-relaxed mb-3">
-                  AlgérieSoleil collecte les données personnelles suivantes :
+                  Francesoleil collecte les données personnelles suivantes :
                 </p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
                   <li>Nom et prénom</li>
@@ -186,7 +186,7 @@ const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose, type }) => {
                 <p className="text-gray-700 leading-relaxed">
                   Pour toute question concernant cette politique de confidentialité, contactez-nous :<br />
                   Email : imam@orange.fr<br />
-                  Téléphone : +212 669-742780
+                  Téléphone : 00 33 6 07 51 74 16
                 </p>
               </section>
             </div>
@@ -203,15 +203,15 @@ const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose, type }) => {
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Article 1 - Objet</h3>
                 <p className="text-gray-700 leading-relaxed">
                   Les présentes conditions générales de vente régissent les relations contractuelles entre 
-                  AlgérieSoleil et ses clients concernant la vente de services touristiques.
+                  FranceSoleil et ses clients concernant la vente de services touristiques.
                 </p>
               </section>
 
               <section>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Article 2 - Prix</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Les prix sont indiqués en dinar Algérien (DZD) toutes taxes comprises. 
-                  AlgérieSoleil se réserve le droit de modifier ses prix à tout moment, 
+                  Les prix sont indiqués en euros (€) toutes taxes comprises. 
+                  FranceSoleil se réserve le droit de modifier ses prix à tout moment, 
                   mais les services seront facturés sur la base des tarifs en vigueur au moment de la réservation.
                 </p>
               </section>
@@ -247,7 +247,7 @@ const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose, type }) => {
               <section>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Article 6 - Responsabilité</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  AlgérieSoleil s'engage à fournir les services réservés dans les meilleures conditions. 
+                  Francesoleil s'engage à fournir les services réservés dans les meilleures conditions. 
                   Notre responsabilité ne peut être engagée en cas de force majeure ou d'événements indépendants de notre volonté.
                 </p>
               </section>
@@ -263,8 +263,8 @@ const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose, type }) => {
               <section>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Article 8 - Droit applicable</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Les présentes conditions générales sont soumises au droit Algérien. 
-                  Tout litige sera de la compétence exclusive des tribunaux de Meknès.
+                  Les présentes conditions générales sont soumises au droit français. 
+                  Tout litige sera de la compétence exclusive des tribunaux de Paris.
                 </p>
               </section>
             </div>

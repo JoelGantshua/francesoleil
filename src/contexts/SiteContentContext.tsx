@@ -122,13 +122,13 @@ export const useSiteContent = () => {
 // ================================================
 const getDefaultContent = (): Record<string, string> => ({
   // Hero Section
-  'home.hero.title': 'Découvrez l\'Algérie',
+  'home.hero.title': 'Découvrez la France',
   'home.hero.subtitle': 'Votre voyage commence ici',
-  'home.hero.description': 'Explorez les merveilles de l\'Algérie avec nos services de qualité',
+  'home.hero.description': 'Explorez les merveilles de la France avec nos services de qualité',
   
   // About Section
   'home.about.title': 'À propos de nous',
-  'home.about.description': 'Nous sommes une équipe passionnée dédiée à vous faire découvrir les merveilles de l\'Algérie .',
+  'home.about.description': 'Nous sommes une équipe passionnée dédiée à vous faire découvrir les merveilles de la France .',
   
   // Why Choose Us
   'home.why.title': 'Pourquoi nous choisir ?',
@@ -149,8 +149,8 @@ const getDefaultContent = (): Record<string, string> => ({
   'contact.form.success': 'Message envoyé avec succès !',
   
   // Footer
-  'footer.text': '© 2024 Algérie Soleil. Tous droits réservés.',
-  'footer.description': 'Votre partenaire de confiance pour découvrir l\'Algérie',
+  'footer.text': '© 2024 Francesoleil. Tous droits réservés.',
+  'footer.description': 'Votre partenaire de confiance pour découvrir la France',
   
   // Common
   'common.loading': 'Chargement...',

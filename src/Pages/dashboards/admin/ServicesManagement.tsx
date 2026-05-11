@@ -264,7 +264,7 @@ const ServicesManagement: React.FC = () => {
 
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <span className="text-lg font-bold text-emerald-600">{service.price} MAD</span>
+                      <span className="text-lg font-bold text-emerald-600">{service.price} €</span>
                       <span className="text-sm text-gray-500">/{service.price_per}</span>
                     </div>
                     {service.city && (

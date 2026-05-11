@@ -143,7 +143,7 @@ const BookingForm = ({ isOpen, onClose, service, serviceType }: BookingFormProps
   // Formater le prix pour l'affichage
   const formattedPrice = new Intl.NumberFormat('fr-MA', {
     style: 'currency',
-    currency: 'MAD'
+    currency: 'EUR'
   }).format(service.price);
 
   return (
@@ -188,7 +188,7 @@ const BookingForm = ({ isOpen, onClose, service, serviceType }: BookingFormProps
                     <p className="mt-2 text-gray-600">
                       Total pour {Math.ceil((new Date(formData.checkOut).getTime() - new Date(formData.checkIn).getTime()) / (1000 * 60 * 60 * 24))} nuit(s): 
                       <span className="font-semibold">
-                        {new Intl.NumberFormat('fr-MA', { style: 'currency', currency: 'MAD' }).format(totalPrice)}
+                        {new Intl.NumberFormat('fr-MA', { style: 'currency', currency: 'EUR' }).format(totalPrice)}
                       </span>
                     </p>
                   )}

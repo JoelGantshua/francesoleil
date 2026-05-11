@@ -4,6 +4,7 @@ import { FiArrowRight, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import Hero from "../components/Hero";
 import CallModal from "../components/CallModal";
 import { Outlet } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 interface Service {
   title: string;
@@ -17,39 +18,42 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
+  const navigate = useNavigate();
   const [activeService, setActiveService] = useState<number>(0);
   const [isHovered, setIsHovered] = useState(false);
   const [showCallModal, setShowCallModal] = useState(false);
 
+  
+
   const services: Service[] = [
     {
       title: "Tourisme & Excursions",
-      description: "Découvrez l'Algérie avec nos visites guidées et activités touristiques.",
+      description: "Découvrez la France avec nos visites guidées et activités touristiques.",
       image: "./images/4.jpg",
       link: "/services/tourisme"
     },
     {
       title: "Location de voitures",
-      description: "Trouvez la voiture idéale pour vos déplacements à travers l'Algérie.",
-      image: "https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80",
+      description: "Trouvez la voiture idéale pour vos déplacements à travers la France.",
+      image: "https://img.sixt.com/1600/040f316a-9ef9-4d94-8752-d6574d68c99d.jpg",
       link: "/services/voitures"
     },
     {
       title: "Appartements",
       description: "Découvrez nos appartements et locations de vacances sélectionnés avec soin.",
-      image: "./images/20.jpg",
+      image: "./images/20.webp",
       link: "/services/appartements"
     },
     {
       title: "Villas",
-      description: "Profitez de nos villas de luxe pour des vacances inoubliables en Algérie.",
+      description: "Profitez de nos villas de luxe pour des vacances inoubliables en France.",
       image: "./images/2.jpg",
       link: "/services/villas"
     },
     {
       title: "Hôtels",
       description: "Découvrez nos hôtels sélectionnés pour votre confort et votre détente.",
-      image: "./images/1.avif",
+      image: "./images/1.jpg",
       link: "/services/hotels"
     }
   ];
@@ -104,7 +108,7 @@ const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Nos Services Exceptionnels</h2>
             <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Découvrez une gamme complète de services pour rendre votre séjour en Algérie inoubliable
+              Découvrez une gamme complète de services pour rendre votre séjour en France inoubliable
             </p>
           </motion.div>
 
@@ -142,19 +146,24 @@ const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
                         <h3 className="text-3xl md:text-5xl font-bold mb-4">{activeServiceData.title}</h3>
                         <p className="text-xl mb-6 max-w-2xl">{activeServiceData.description}</p>
                         <button 
-                          onClick={() => onOpenBooking({
-                            id: `home-${activeServiceData.title.toLowerCase().replace(/\\s+/g, '-')}`,
-                            title: activeServiceData.title,
-                            description: activeServiceData.description,
-                            price: 500, // Prix par défaut
-                            address: 'Algérie',
-                            city: 'Marrakech',
-                            images: [activeServiceData.image]
-                          })}
-                          className="inline-flex items-center bg-yellow-500 text-black px-6 py-3 rounded-full font-medium hover:bg-white transition-all duration-300 transform hover:scale-105"
-                        >
-                          Réserver maintenant <FiArrowRight className="ml-2" />
-                        </button>
+  onClick={() => navigate(activeServiceData.link)}
+  className="
+    ml-4
+    bg-gradient-to-r from-blue-700 via-gray-100 to-red-600
+    text-black
+    px-5 py-2.5
+    rounded-lg
+    text-sm
+    font-bold
+    hover:brightness-110
+    hover:scale-105
+    transition-all duration-300
+    shadow-md hover:shadow-lg
+    flex items-center gap-2
+  "
+>
+  Réserver maintenant <FiArrowRight className="ml-2" />
+</button>
                       </>
                     )}
                   </motion.div>
@@ -237,29 +246,29 @@ const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Événements à Venir</h2>
             <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Découvrez les événements incontournables qui vous attendent en Algérie
+              Découvrez les événements incontournables qui vous attendent en France
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {[
               {
-                title: "Festival des Roses",
-                date: "15-17 Mai 2026",
-                location: "Vallée des Roses",
+                title: "La Nuit Européenne des Musées",
+                date: "Le 23 mai 2026",
+                location: "Le Musée Montagnard des Houches",
                 image: "./images/6.jpg"
               },
               {
-                title: "Marathon des Sables",
-                date: "12-22 Avril 2026",
-                location: "Désert du Sahara",
-                image: "./images/1.avif"
+                title: "Jazz sous les Pommiers ",
+                date: "Du 8 au 16 mai 2026",
+                location: "Coutances",
+                image: "./images/JZ.avif"
               },
               {
-                title: "Festival des Arts",
-                date: "22-30 Juin 2026",
-                location: "Alger",
-                image: "./images/15.jpg"
+                title: "D-Day Festival Normandy ",
+                date: "Du 30 mai au 6 juin 2026",
+                location: "Normandie",
+                image: "./images/15.avif"
               }
             ].map((event, index) => (
               <motion.div 
@@ -300,7 +309,7 @@ const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Pourquoi Nous Choisir ?</h2>
             <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Découvrez ce qui fait de nous le partenaire idéal pour votre voyage à Meknès
+              Découvrez ce qui fait de nous le partenaire idéal pour votre voyage en France
             </p>
           </div>
 
@@ -351,9 +360,9 @@ const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r bg-black/30 to-white text-black">
         <div className="container mx-auto px-3 text-center">
-          <h2 className="text-4xl font-bold mb-6">Prêt à vivre l'aventure Algérien   ?</h2>
+          <h2 className="text-4xl font-bold mb-6">Prêt à vivre l'aventure Française   ?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Notre équipe est à votre disposition pour créer le voyage de vos rêves en Algérie
+            Notre équipe est à votre disposition pour créer le voyage de vos rêves en France
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a 

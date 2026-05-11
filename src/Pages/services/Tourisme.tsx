@@ -167,7 +167,7 @@ const Tourisme = () => {
               name: cityName,
               image: Array.isArray(circuit.images) && circuit.images.length > 0 
                 ? circuit.images[0] 
-                : '/assets/hero/hero1.jpg',
+                : '/assets/hero/mk.jpg',
               description: `Découvrez nos circuits à ${cityName}`,
               voyages: []
             });
@@ -274,9 +274,9 @@ const Tourisme = () => {
   // Images pour le hero
   const heroImages = [
     '/assets/hero/A.jpg',
-    '/assets/hero/B.jpg',
-    '/assets/hero/C.jpg',
     '/assets/hero/D.jpg',
+    '/assets/hero/C.jpg',
+    '/assets/hero/mk.jpg',
   ].filter(Boolean);
 
   const handleHeroSearch = (query: string) => {
@@ -296,8 +296,8 @@ const Tourisme = () => {
     return (
       <div className="min-h-screen bg-gray-50">
         <ServiceHero
-          title="Découvrez  l\'Algérie "
-          subtitle="Explorez nos circuits touristiques à travers les plus belles villes de  l\'Algérie ."
+          title="Découvrez  la France "
+          subtitle="Explorez nos circuits touristiques à travers les plus belles villes de  la France ."
           images={heroImages}
           searchPlaceholder="Rechercher une destination, un circuit..."
           onSearch={handleHeroSearch}
@@ -326,8 +326,8 @@ const Tourisme = () => {
     return (
       <div className="min-h-screen bg-gray-50">
         <ServiceHero
-          title="Découvrez  l\'Algérie "
-          subtitle="Explorez nos circuits touristiques à travers les plus belles villes de  l\'Algérie ."
+          title="Découvrez  la France "
+          subtitle="Explorez nos circuits touristiques à travers les plus belles villes de  la France ."
           images={heroImages}
           searchPlaceholder="Rechercher une destination, un circuit..."
           onSearch={handleHeroSearch}
@@ -345,8 +345,8 @@ const Tourisme = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <ServiceHero
-        title="Découvrez  l'Algérie "
-        subtitle="Explorez nos circuits touristiques à travers les plus belles villes de l'Algérie. Des expériences authentiques et inoubliables vous attendent."
+        title="Découvrez  la France "
+        subtitle="Explorez nos circuits touristiques à travers les plus belles villes de la France. Des expériences authentiques et inoubliables vous attendent."
         images={heroImages}
         searchPlaceholder="Rechercher une destination, un circuit..."
         onSearch={handleHeroSearch}

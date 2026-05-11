@@ -255,7 +255,7 @@ const PropertyForm: React.FC<PropertyFormProps> = ({ property, type, onClose, on
             </div>
             <div className="form-group">
               <label htmlFor="price_per_night" className="block text-sm font-medium text-gray-700">
-                Prix par nuit (MAD)
+                Prix par nuit (€)
               </label>
               <input
                 type="number"

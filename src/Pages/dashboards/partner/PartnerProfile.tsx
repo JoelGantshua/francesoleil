@@ -316,7 +316,7 @@ const PartnerProfile = () => {
               <div>
                 <p className="text-sm font-medium text-gray-600">Gains totaux</p>
                 <p className="mt-2 text-2xl font-bold text-gray-900">
-                  {profile?.total_earnings?.toLocaleString() || 0} MAD
+                  {profile?.total_earnings?.toLocaleString() || 0} €
                 </p>
               </div>
               <div className="bg-green-100 rounded-full p-3">
@@ -332,7 +332,7 @@ const PartnerProfile = () => {
               <div>
                 <p className="text-sm font-medium text-gray-600">En attente</p>
                 <p className="mt-2 text-2xl font-bold text-gray-900">
-                  {profile?.pending_earnings?.toLocaleString() || 0} MAD
+                  {profile?.pending_earnings?.toLocaleString() || 0} €
                 </p>
               </div>
               <div className="bg-yellow-100 rounded-full p-3">
@@ -348,7 +348,7 @@ const PartnerProfile = () => {
               <div>
                 <p className="text-sm font-medium text-gray-600">Payés</p>
                 <p className="mt-2 text-2xl font-bold text-gray-900">
-                  {profile?.paid_earnings?.toLocaleString() || 0} MAD
+                  {profile?.paid_earnings?.toLocaleString() || 0} €
                 </p>
               </div>
               <div className="bg-emerald-100 rounded-full p-3">

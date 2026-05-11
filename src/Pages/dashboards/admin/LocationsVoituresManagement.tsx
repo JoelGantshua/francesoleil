@@ -224,7 +224,7 @@ const LocationsVoituresManagement: FC = () => {
                   </div>
                   <div className="text-right">
                     <p className="font-bold text-blue-600">
-                      {voiture.price_per_day} MAD/jour
+                      {voiture.price_per_day} €/jour
                     </p>
                     <span
                       className={`text-xs ${

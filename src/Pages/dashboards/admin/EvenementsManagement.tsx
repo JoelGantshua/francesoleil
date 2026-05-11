@@ -158,7 +158,7 @@ const EvenementsManagement: React.FC = () => {
                       <span className="text-lg font-bold text-green-600">Gratuit</span>
                     ) : (
                       <>
-                        <span className="text-lg font-bold text-emerald-600">{item.price} MAD</span>
+                        <span className="text-lg font-bold text-emerald-600">{item.price} €</span>
                       </>
                     )}
                   </div>

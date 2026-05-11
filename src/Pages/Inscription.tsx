@@ -119,7 +119,7 @@ const Inscription = () => {
         phone: formData.telephone.trim() || undefined,
         role: 'client' as const,
         is_verified: false,
-        country: 'Maroc'
+        country: 'France'
       };
       
       await signUp(
@@ -335,7 +335,7 @@ const Inscription = () => {
                   value={formData.telephone}
                   onChange={handleChange}
                   onBlur={() => setTouched({...touched, telephone: true})}
-                  placeholder="+212 6 12 34 56 78"
+                  placeholder="00 33 6 07 51 74 16"
                   className={`${inputClass('telephone')} ${formData.telephone && !errors.telephone && validatePhone(formData.telephone) ? 'pr-10' : ''}`}
                   aria-invalid={!!errors.telephone}
                   aria-describedby={errors.telephone ? 'telephone-error' : undefined}
@@ -347,7 +347,7 @@ const Inscription = () => {
                 )}
               </div>
               <p className={errorClass('telephone')} id="telephone-error">
-                {errors.telephone || 'Format : +212 6 12 34 56 78'}
+                {errors.telephone || 'Format : 00 33 6 07 51 74 16'}
               </p>
             </div>
 

@@ -110,7 +110,7 @@ const Guides = () => {
                 Guides Touristiques Professionnels
               </h1>
               <p className="text-xl text-emerald-100 max-w-2xl mx-auto">
-                Découvrez l'Algérie avec nos guides expérimentés et passionnés
+                Découvrez la France avec nos guides expérimentés et passionnés
               </p>
             </motion.div>
           </div>
@@ -205,7 +205,7 @@ const Guides = () => {
                     <div className="flex items-center justify-between pt-4 border-t">
                       <div>
                         <span className="text-2xl font-bold text-emerald-600">
-                          {guide.price_per_day} MAD
+                          {guide.price_per_day} €
                         </span>
                         <span className="text-gray-500 text-sm"> / jour</span>
                       </div>

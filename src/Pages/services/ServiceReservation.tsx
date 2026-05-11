@@ -598,7 +598,7 @@ const ServiceReservation: React.FC = () => {
                           className="h-4 w-4 text-emerald-600 focus:ring-emerald-500 border-gray-300 rounded"
                         />
                         <label htmlFor="breakfastIncluded" className="ml-2 block text-sm text-gray-700">
-                          Petit-déjeuner inclus (+150 MAD/nuit)
+                          Petit-déjeuner inclus (+15 €/nuit)
                         </label>
                       </div>
                     </div>
@@ -731,7 +731,7 @@ const ServiceReservation: React.FC = () => {
                           <div className="mt-4 pt-4 border-t border-gray-200">
                             <div className="flex justify-between text-sm">
                               <span className="text-gray-500">Prix par nuit</span>
-                              <span className="font-medium text-gray-900">{service.price} MAD</span>
+                              <span className="font-medium text-gray-900">{service.price} €</span>
                             </div>
                             
                             {formData.startDate && formData.endDate && (
@@ -748,7 +748,7 @@ const ServiceReservation: React.FC = () => {
                                     <div className="mt-1 flex justify-between text-sm">
                                       <span className="text-gray-500">Petit-déjeuner</span>
                                       <span className="font-medium text-gray-900">
-                                        +{150 * nights} MAD
+                                        +{15 * nights} €
                                       </span>
                                     </div>
                                   )}
@@ -757,7 +757,7 @@ const ServiceReservation: React.FC = () => {
                                     <div className="flex justify-between text-base font-medium text-gray-900">
                                       <span>Total</span>
                                       <span>
-                                        {totalPrice + (formData.breakfastIncluded ? 150 * nights : 0)} MAD
+                                        {totalPrice + (formData.breakfastIncluded ? 15 * nights : 0)} €
                                       </span>
                                     </div>
                                   </div>
@@ -781,7 +781,7 @@ const ServiceReservation: React.FC = () => {
                       </div>
                       
                       <div className="text-xs text-gray-500 space-y-2">
-                        <p>En cliquant sur « Confirmer la réservation », vous acceptez les conditions générales de vente et la politique de confidentialité de Maroc 2030.</p>
+                        <p>En cliquant sur « Confirmer la réservation », vous acceptez les conditions générales de vente et la politique de confidentialité de France Soleil.</p>
                       </div>
                     </div>
                   )}

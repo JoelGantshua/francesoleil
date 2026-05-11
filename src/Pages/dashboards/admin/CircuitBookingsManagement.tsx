@@ -129,7 +129,7 @@ const CircuitBookingsManagement = () => {
       booking.number_of_people,
       `${booking.custom_duration} jours`,
       new Date(booking.start_date).toLocaleDateString('fr-FR'),
-      `${booking.total_price} MAD`,
+      `${booking.total_price} €`,
       booking.payment_status
     ]);
 
@@ -216,7 +216,7 @@ const CircuitBookingsManagement = () => {
             <div>
               <p className="text-sm text-gray-600">Revenu</p>
               <p className="text-2xl font-bold text-purple-600">
-                {stats.totalRevenue.toLocaleString()} MAD
+                {stats.totalRevenue.toLocaleString()} €
               </p>
             </div>
             <DollarSign className="w-8 h-8 text-purple-600" />
@@ -337,7 +337,7 @@ const CircuitBookingsManagement = () => {
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">
                   <span className="text-sm font-bold text-gray-900">
-                    {booking.total_price.toLocaleString()} MAD
+                    {booking.total_price.toLocaleString()} €
                   </span>
                   <div className="text-xs text-gray-500">{booking.payment_method}</div>
                 </td>
@@ -435,7 +435,7 @@ const CircuitBookingsManagement = () => {
                 <div>
                   <p className="text-sm text-gray-600">Prix total</p>
                   <p className="font-medium text-lg text-emerald-600">
-                    {selectedBooking.total_price.toLocaleString()} MAD
+                    {selectedBooking.total_price.toLocaleString()} €
                   </p>
                 </div>
                 <div>

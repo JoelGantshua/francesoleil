@@ -490,7 +490,7 @@ const Recherche = () => {
                         </div>
                         <div className="flex items-center justify-between">
                           <p className="text-lg font-bold text-primary">
-                            {result.price.toLocaleString()} MAD
+                            {result.price.toLocaleString()} €
                             <span className="text-sm font-normal text-gray-500">
                               {result.type === 'car' ? '/jour' : result.type === 'property' ? '/nuit' : ''}
                             </span>

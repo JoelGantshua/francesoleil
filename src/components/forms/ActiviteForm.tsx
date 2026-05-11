@@ -135,7 +135,7 @@ const ActiviteForm: React.FC<ActiviteFormProps> = ({ activite, onClose, onSucces
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Prix par personne (MAD) *</label>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Prix par personne (€) *</label>
               <input type="number" required value={formData.price_per_person} onChange={(e) => setFormData({ ...formData, price_per_person: e.target.value })} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent" />
             </div>
 

@@ -281,10 +281,10 @@ const PartnerDashboard: React.FC = () => {
               <div>
                 <p className="text-sm text-gray-600">En attente</p>
                 <p className="text-3xl font-bold text-yellow-600 mt-1">
-                  {stats?.pending_earnings?.toFixed(2) || '0.00'} MAD
+                  {stats?.pending_earnings?.toFixed(2) || '0.00'} €
                 </p>
                 <p className="text-xs text-gray-500 mt-1">
-                  À recevoir de Algérie
+                  À recevoir 
                 </p>
               </div>
               <div className="bg-yellow-100 p-3 rounded-lg">
@@ -298,10 +298,10 @@ const PartnerDashboard: React.FC = () => {
               <div>
                 <p className="text-sm text-gray-600">Gains reçus</p>
                 <p className="text-3xl font-bold text-green-600 mt-1">
-                  {stats?.paid_earnings?.toFixed(2) || '0.00'} MAD
+                  {stats?.paid_earnings?.toFixed(2) || '0.00'} €
                 </p>
                 <p className="text-xs text-gray-500 mt-1">
-                  Ce mois: {stats?.this_month_earnings?.toFixed(2) || '0.00'} MAD
+                  Ce mois: {stats?.this_month_earnings?.toFixed(2) || '0.00'} €
                 </p>
               </div>
               <div className="bg-green-100 p-3 rounded-lg">
@@ -318,7 +318,7 @@ const PartnerDashboard: React.FC = () => {
             <div>
               <h3 className="font-semibold text-blue-900">Information importante</h3>
               <p className="text-sm text-blue-800 mt-1">
-                Les montants affichés sont après déduction de la commission de 10% de Maroc2030.
+                Les montants affichés sont après déduction de la commission de 10% de Francesoleil.
                 Vous recevez 90% du montant total payé par les clients.
               </p>
             </div>
@@ -389,7 +389,7 @@ const PartnerDashboard: React.FC = () => {
                             </td>
                             <td className="px-6 py-4 whitespace-nowrap">
                               <div className="text-sm font-semibold text-green-600">
-                                {booking.amount?.toFixed(2)} MAD
+                                {booking.amount?.toFixed(2)} €
                               </div>
                               <div className="text-xs text-gray-500">(90% du total)</div>
                             </td>

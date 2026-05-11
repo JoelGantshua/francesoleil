@@ -5,16 +5,16 @@ import { motion } from 'framer-motion';
 const slides = [
   {
     id: 1,
-    title: "Découvrez les merveilles de l'Algérie ",
+    title: "Découvrez les merveilles de la France ",
     subtitle: "Des paysages à couper le souffle vous attendent",
-    image: "./images/18.jpg",
+    image: "./images/18.avif",
     cta: "Explorer maintenant"
   },
   {
     id: 2,
     title: "Séjours inoubliables",
     subtitle: "Trouvez l'hébergement parfait pour vos vacances",
-    image: "./images/12.jpg",
+    image: "./images/12.jpeg",
     cta: "Voir les offres"
   },
   {
@@ -27,8 +27,8 @@ const slides = [
   {
     id: 4,
     title: "Culture et traditions",
-    subtitle: "Plongez dans l'authenticité Algérienne",
-    image: "./images/5.jpg",
+    subtitle: "Plongez dans l'authenticité française",
+    image: "./images/5.webp",
     cta: "En savoir plus"
   }
 ];
@@ -221,12 +221,28 @@ const Hero = () => {
             transition={{ delay: 0.7 }}
             className="mt-8"
           >
-            <a 
-              href="services" 
-                   className="inline-flex items-center bg-yellow-500 text-black px-6 py-3 rounded-full font-medium hover:bg-yellow-200 transition-all duration-300 transform hover:scale-105"
-            >
-              {slides[currentSlide] ? slides[currentSlide].cta : ''}
-            </a>
+           <a 
+  href="services" 
+  className="
+    inline-flex items-center gap-2
+
+    ml-4
+    bg-gradient-to-r from-blue-700 via-gray-100 to-red-600
+    text-black
+
+    px-5 py-2.5
+    rounded-lg
+    text-sm font-bold
+
+    hover:brightness-110
+    hover:scale-105
+
+    transition-all duration-300
+    shadow-md hover:shadow-lg
+  "
+>
+  {slides[currentSlide] ? slides[currentSlide].cta : ''}
+</a>
           </motion.div>
         </div>
       </div>

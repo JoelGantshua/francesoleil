@@ -20,11 +20,11 @@ const SettingsManagement: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [saving, setSaving] = useState(false);
   const [settings, setSettings] = useState<SiteSettings>({
-    site_name: 'AlgérieSoleil',
-    site_description: 'Plateforme de services touristiques en Algérie',
+    site_name: 'FranceSoleil',
+    site_description: 'Plateforme de services touristiques en France',
     contact_email: 'imam@orange.fr',
-    contact_phone: '+212 669-742780',
-    contact_address: 'Alger, Algérie',
+    contact_phone: '+33 6 07 51 74 16',
+    contact_address: 'Valence, France',
     facebook_url: '',
     instagram_url: '',
     twitter_url: '',
@@ -230,7 +230,7 @@ const SettingsManagement: React.FC = () => {
                 value={settings.facebook_url}
                 onChange={(e) => setSettings({ ...settings, facebook_url: e.target.value })}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                placeholder="https://facebook.com/algériesoleil"
+                placeholder="https://facebook.com/"
               />
             </div>
             <div>
@@ -243,7 +243,7 @@ const SettingsManagement: React.FC = () => {
                 value={settings.instagram_url}
                 onChange={(e) => setSettings({ ...settings, instagram_url: e.target.value })}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                placeholder="https://instagram.com/algériesoleil"
+                placeholder="https://instagram.com/"
               />
             </div>
             <div>
@@ -256,7 +256,7 @@ const SettingsManagement: React.FC = () => {
                 value={settings.twitter_url}
                 onChange={(e) => setSettings({ ...settings, twitter_url: e.target.value })}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                placeholder="https://twitter.com/algériesoleil"
+                placeholder="https://twitter.com/"
               />
             </div>
           </div>

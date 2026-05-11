@@ -118,7 +118,7 @@ const CarCard: React.FC<CarCardProps> = ({
               {marque} {modele} <span className="text-gray-500">({annee})</span>
             </h3>
             <p className="text-emerald-600 font-medium">
-              {prix_jour.toLocaleString()} MAD <span className="text-gray-500 text-sm">/ jour</span>
+              {prix_jour.toLocaleString()} € <span className="text-gray-500 text-sm">/ jour</span>
             </p>
           </div>
           <span className="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded">

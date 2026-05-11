@@ -47,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = () => {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('click', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
@@ -105,22 +105,21 @@ const Navbar: React.FC<NavbarProps> = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-md fixed w-full z-50">
+    <nav className="bg-white shadow-md fixed w-full z-50 overflow-visible">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo à gauche */}
           <div className="flex items-center">
             <Link to="/" className="shrink-0 flex items-center p-0">
               <h1 className="text-primary m-0 text-xl font-bold" style={{ fontSize: '1.6rem' }}>
-                <i className="fa fa-map-marker-alt mr-2"></i>AlgérieSoleil
+                <i className="fa fa-map-marker-alt mr-2"></i>FranceSoleil
               </h1>
             </Link>
           </div>
           
           {/* Conteneur pour la navigation et le sélecteur de langue */}
           <div className="flex items-center">
-            {/* Navigation */}
-            <div className="hidden lg:flex md:items-center md:space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
             {navLinks.map((item) => (
               <div key={item.name} className="relative">
                 {item.submenu ? (
@@ -134,7 +133,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                       <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${servicesOpen ? 'transform rotate-180' : ''}`} />
                     </button>
                     {servicesOpen && (
-                      <div className="absolute left-0 mt-2 w-72 rounded-xl shadow-2xl bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 ring-1 ring-gray-700 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200 backdrop-blur-lg">
+                      <div className="absolute left-0 mt-2 w-72 rounded-xl shadow-2xl bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 ring-1 ring-gray-700 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200 backdrop-blur-lg">
                         <div className="p-2">
                           {item.submenu.map((_subItem) => {
                             // ordered mapping handled below (no-op here)
@@ -147,11 +146,13 @@ const Navbar: React.FC<NavbarProps> = () => {
                               <Link
                                 key={subItem.path}
                                 to={subItem.path}
-                                onPointerDown={() => { setIsOpen(false); setServicesOpen(false); }}
-                                onClick={() => { setIsOpen(false); setServicesOpen(false); }}
-                                className="group flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium text-gray-200 hover:bg-white/10 transition-all duration-200 hover:shadow-lg hover:shadow-white-200/20"
+                                onClick={() => {
+                                  setIsOpen(false);
+                                  setServicesOpen(false);
+                                }}
+                                className="group flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium text-gray-200 hover:bg-white/10 transition-all duration-200 hover:shadow-lg hover:shadow-white/20"
                               >
-                                <div className={`flex items-center justify-center w-10 h-10 rounded-lg bg-linear-to-br ${gradientColor} shadow-lg group-hover:scale-110 group-hover:shadow-xl transition-transform duration-200`}>
+                                <div className={`flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br ${gradientColor} shadow-lg group-hover:scale-110 group-hover:shadow-xl transition-transform duration-200`}>
                                   {Icon && <Icon className="w-5 h-5 text-white" />}
                                 </div>
                                 <span className="group-hover:text-white transition-all duration-200">
@@ -161,7 +162,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                             );
                           })}
                         </div>
-                        <div className="bg-linear-to-r from-white-200/20 to-white-200/20 px-4 py-3 border-t border-gray-700/50 backdrop-blur-sm">
+                        <div className="bg-gradient-to-r from-white-200/20 to-white-200/20 px-4 py-3 border-t border-gray-700/50 backdrop-blur-sm">
                           <p className="text-xs text-gray-300 text-center font-medium">
                             Découvrez tous nos services exceptionnels
                           </p>
@@ -186,7 +187,23 @@ const Navbar: React.FC<NavbarProps> = () => {
             {!profile ? (
               <Link
                 to={ROUTES.BECOME_HOST}
-                className="ml-4 bg-linear-to-r from-yellow-700 to-yellow-400 text-white px-5 py-2.5 rounded-lg text-sm font-bold hover:from-yellow-700 hover:to-yellow-400 transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2"
+                className="
+  ml-4
+  bg-gradient-to-r from-blue-700 via-gray-100 to-red-600
+  text-black
+  px-5 py-2.5
+  rounded-lg
+  text-sm
+  font-bold
+
+  hover:brightness-110
+  hover:scale-105
+
+  transition-all duration-300
+  shadow-md hover:shadow-lg
+
+  flex items-center gap-2
+"
               >
                 <UserPlus className="w-4 h-4" />
                 <span>Devenir hôte</span>
@@ -206,7 +223,23 @@ const Navbar: React.FC<NavbarProps> = () => {
             {!profile ? (
               <Link
                 to={ROUTES.BECOME_HOST}
-                className="mr-4 bg-linear-to-r from-emerald-600 to-green-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:from-emerald-700 hover:to-green-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2"
+                className="
+                ml-4
+                bg-gradient-to-r from-blue-700 via-gray-100 to-red-600
+                text-black
+                px-5 py-2.5
+                rounded-lg
+                text-sm
+                font-bold
+              
+                hover:brightness-110
+                hover:scale-105
+              
+                transition-all duration-300
+                shadow-md hover:shadow-lg
+              
+                flex items-center gap-2
+              "
               >
                 <UserPlus className="w-4 h-4" />
                 <span>Devenir hôte</span>

@@ -132,7 +132,7 @@ const DevenirHote: React.FC = () => {
         <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
           <div className="p-8">
             <div className="text-center mb-8">
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">Devenir Hôte sur AlgérieSoleil</h1>
+              <h1 className="text-3xl font-bold text-gray-900 mb-2">Devenir Hôte sur FranceSoleil</h1>
               <p className="text-gray-600">Rejoignez notre communauté de partenaires et commencez à gagner de l'argent avec vos biens ou services.</p>
             </div>
 

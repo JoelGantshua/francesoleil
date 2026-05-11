@@ -101,10 +101,10 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       </script>
 
       {/* Métadonnées supplémentaires */}
-      <meta name="author" content="Maroc Soleil" />
-      <meta name="copyright" content="© 2025 Algérie Soleil. Tous droits réservés." />
-      <meta name="geo.region" content="MA" />
-      <meta name="geo.placename" content="Maroc" />
+      <meta name="author" content="France Soleil" />
+      <meta name="copyright" content="© 2025 France Soleil. Tous droits réservés." />
+      <meta name="geo.region" content="FR" />
+      <meta name="geo.placename" content="France" />
       <meta name="language" content="French" />
       <meta name="revisit-after" content="1 days" />
       <meta name="rating" content="general" />

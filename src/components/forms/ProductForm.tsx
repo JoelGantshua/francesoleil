@@ -273,7 +273,7 @@ const ProductForm: React.FC<ProductFormProps> = ({ product, onClose, onSuccess }
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Prix (MAD) *
+                Prix (€) *
               </label>
               <div className="relative">
                 <DollarSign className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />

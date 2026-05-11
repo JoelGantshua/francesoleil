@@ -60,7 +60,7 @@ export const SiteSettings: React.FC = () => {
       
       // Set default values if not exists
       const defaultSettings: Partial<SiteSettings> = {
-        site_name: 'Maroc 2030',
+        site_name: 'France Soleil',
         primary_color: '#10B981',
         secondary_color: '#3B82F6',
         accent_color: '#8B5CF6',
@@ -468,7 +468,7 @@ export const SiteSettings: React.FC = () => {
                     {...field}
                   >
                     <option value="">Sélectionner un pays</option>
-                    <option value="Maroc">Algérie</option>
+                    <option value="Algérie">Algérie</option>
                     <option value="France">France</option>
                     <option value="Belgique">Belgique</option>
                     <option value="Canada">Canada</option>

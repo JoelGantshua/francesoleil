@@ -221,7 +221,7 @@ const PartnerProductsManagement: React.FC = () => {
                       <p className="text-gray-600 line-clamp-2">{product.description}</p>
                     </div>
                     <div className="text-right">
-                      <p className="text-2xl font-bold text-emerald-600">{product.price} MAD</p>
+                      <p className="text-2xl font-bold text-emerald-600">{product.price} €</p>
                       <p className="text-sm text-gray-500">par nuit</p>
                     </div>
                   </div>

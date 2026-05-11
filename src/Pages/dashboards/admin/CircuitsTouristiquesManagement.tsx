@@ -133,7 +133,7 @@ const CircuitsTouristiquesManagement: React.FC = () => {
               </div>
               <div className="flex items-center justify-between pt-3 border-t">
                 <div>
-                  <span className="text-lg font-bold text-emerald-600">{item.price_per_person || item.price || '0'} MAD</span>
+                  <span className="text-lg font-bold text-emerald-600">{item.price_per_person || item.price || '0'} €</span>
                   <span className="text-sm text-gray-500">/pers</span>
                 </div>
                 <div className="flex gap-2">

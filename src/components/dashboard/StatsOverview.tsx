@@ -143,7 +143,7 @@ const StatsOverview: React.FC = () => {
   const formatCurrency = (amount: number) => {
     return new Intl.NumberFormat('fr-FR', { 
       style: 'currency', 
-      currency: 'MAD' 
+      currency: 'EUR' 
     }).format(amount);
   };
 

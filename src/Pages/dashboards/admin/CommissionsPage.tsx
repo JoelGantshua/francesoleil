@@ -87,7 +87,7 @@ export const CommissionsPage: React.FC = () => {
         'ID Réservation',
         'Service',
         'Partenaire',
-        'Montant Total (MAD)',
+        'Montant Total (€)',
         'Commission (10%)',
         'Montant Partenaire',
         'Statut Paiement',
@@ -183,19 +183,19 @@ export const CommissionsPage: React.FC = () => {
           <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
             <h3 className="text-sm font-medium text-gray-500">Total des commissions</h3>
             <p className="mt-1 text-3xl font-semibold text-gray-900">
-              {totalCommissions.toFixed(2)} MAD
+              {totalCommissions.toFixed(2)} €
             </p>
           </div>
           <div className="bg-green-50 p-4 rounded-lg border border-green-200">
             <h3 className="text-sm font-medium text-green-700">Commissions payées</h3>
             <p className="mt-1 text-3xl font-semibold text-green-900">
-              {totalPaid.toFixed(2)} MAD
+              {totalPaid.toFixed(2)} €
             </p>
           </div>
           <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
             <h3 className="text-sm font-medium text-yellow-700">Commissions en attente</h3>
             <p className="mt-1 text-3xl font-semibold text-yellow-900">
-              {totalPending.toFixed(2)} MAD
+              {totalPending.toFixed(2)} €
             </p>
           </div>
         </div>
@@ -241,13 +241,13 @@ export const CommissionsPage: React.FC = () => {
                     {commission.partner_name || 'N/A'}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                    {commission.total_amount?.toFixed(2)} MAD
+                    {commission.total_amount?.toFixed(2)} €
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-emerald-600 font-medium">
-                    {commission.admin_commission?.toFixed(2)} MAD
+                    {commission.admin_commission?.toFixed(2)} €
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                    {commission.partner_amount?.toFixed(2)} MAD
+                    {commission.partner_amount?.toFixed(2)} €
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${

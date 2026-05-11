@@ -8,9 +8,9 @@ interface SEOProps {
 }
 
 export const SEO = ({
-  title = 'Algérie Soleil - Découvrez le Maroc',
-  description = 'Voyagez à travers l\'Algérie et découvrez des expériences uniques',
-  keywords = ['Algérie', 'tourisme', 'voyage', 'hôtels', 'activités'],
+  title = 'France Soleil  - Découvrez la France',
+  description = 'Voyagez à travers la France et découvrez des expériences uniques',
+  keywords = ['France', 'tourisme', 'voyage', 'hôtels', 'activités'],
   image = '/logo.png'
 }: SEOProps) => {
   const siteUrl = typeof window !== 'undefined' ? window.location.href : '';

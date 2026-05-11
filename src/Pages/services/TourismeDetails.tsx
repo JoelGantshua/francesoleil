@@ -101,7 +101,7 @@ const TourismeDetails = () => {
               )}
 
               <p className="text-2xl font-semibold text-emerald-600 mb-4">
-                À partir de {property.price_per_person || property.price} MAD / personne
+                À partir de {property.price_per_person || property.price} € / personne
               </p>
               
               <p className="text-gray-700 mb-6">{property.description}</p>

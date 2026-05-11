@@ -145,7 +145,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         phone: userData.phone || '',
         role: userData.role || 'client',
         is_verified: false,
-        country: userData.country || 'Maroc',
+        country: userData.country || 'France',
         created_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
         address: userData.address,
@@ -233,7 +233,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             first_name: 'Admin',
             last_name: 'User',
             is_verified: true,
-            country: 'Maroc',
+            country: 'France',
             created_at: new Date().toISOString(),
             updated_at: new Date().toISOString(),
             phone: '',
@@ -263,7 +263,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
       // Mettre à jour les champs manquants si nécessaire
       const updates: Partial<Profile> = {};
-      if (!profile.country) updates.country = 'Maroc';
+      if (!profile.country) updates.country = 'France';
       if (!profile.updated_at) updates.updated_at = new Date().toISOString();
 
       if (Object.keys(updates).length > 0) {

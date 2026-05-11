@@ -1,7 +1,7 @@
 {
-  "name": "AlgérieSoleil",
-  "short_name": "AlgérieSoleil",
-  "description": "Découvrez les services de voyage et de tourisme au Maroc. Location de voitures, réservation d'hôtels, appartements et plus encore.",
+  "name": "Francesoleil",
+  "short_name": "Francesoleil",
+  "description": "Découvrez les services de voyage et de tourisme en France. Location de voitures, réservation d'hôtels, appartements et plus encore.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

@@ -30,7 +30,7 @@ const PartnerSettings = () => {
   // État pour les préférences
   const [preferences, setPreferences] = useState({
     language: 'fr',
-    currency: 'MAD',
+    currency: 'EUR',
     timezone: 'Africa/Casablanca',
   });
 

@@ -116,7 +116,7 @@ const Immobilier = () => {
               className="text-center"
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Immobilier en Algérie
+                Immobilier en France
               </h1>
               <p className="text-xl text-indigo-100 max-w-2xl mx-auto">
                 Trouvez votre bien immobilier idéal
@@ -184,10 +184,10 @@ const Immobilier = () => {
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                 >
                   <option value="all">Tous</option>
-                  <option value="0-500000">0 - 500K MAD</option>
-                  <option value="500000-1000000">500K - 1M MAD</option>
-                  <option value="1000000-2000000">1M - 2M MAD</option>
-                  <option value="2000000+">+ 2M MAD</option>
+                  <option value="0-500000">0 - 500K €</option>
+                  <option value="500000-1000000">500K - 1M €</option>
+                  <option value="1000000-2000000">1M - 2M €</option>
+                  <option value="2000000+">+ 2M €</option>
                 </select>
               </div>
             </div>
@@ -270,7 +270,7 @@ const Immobilier = () => {
                       <div className="flex items-center justify-between mb-4">
                         <div>
                           <span className="text-2xl font-bold text-indigo-600">
-                            {formatPrice(bien.price)} MAD
+                            {formatPrice(bien.price)} €
                           </span>
                         </div>
                       </div>
