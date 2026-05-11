@@ -17,7 +17,7 @@ interface HomeProps {
   onOpenBooking: (apartment: any) => void;
 }
 
-const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
+const Home: React.FC<HomeProps> = () => {
   const navigate = useNavigate();
   const [activeService, setActiveService] = useState<number>(0);
   const [isHovered, setIsHovered] = useState(false);
